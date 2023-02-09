@@ -17,7 +17,7 @@
 %let measure=MPG_City;
 %let measureformat=%str(format=BEST6.);
 %let stat=MEAN;
-%let n=10;
+%let n=5;
 %let category=Origin;
 title "Top Models by MPG_City for each region of Origin";
 footnote;
@@ -89,3 +89,28 @@ proc gchart data=topn
 run;
 quit;
 
+/* Create a simple bar graph for the data to show the rankings */
+/* and relative values */
+/* Calculate size of chart based on number of category values */
+*goptions ypixels=%eval(250 * &categorycount) 
+xpixels=500;
+ods graphics/ imagefmt=jpeg 
+width=%eval(250 * &categorycount) height=500; 
+
+proc sgplot data=topn
+;
+	hbar &report / 
+		response=&measure
+		group=&category
+		categoryorder=respdesc
+grouporder=descending
+seglabel
+		/*nozero
+		clipref
+		frame	
+		discrete*/
+		stat=&stat
+		/*patternid=group*/
+;
+run;
+quit;
