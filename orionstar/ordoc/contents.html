@@ -1,0 +1,3193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>Orion Star Sports & Outdoors - Data Dictionary</title>
+<style type="text/css">
+<!--
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: "." }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.ContentTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.Output
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #F0F0F0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.HeaderEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.NoteContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Graph
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.WarnContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.NoteBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FatalContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Document
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+a:link {
+color:#0066AA
+}
+a:visited {
+color:#004488
+}
+a:active {
+color:#004488
+}
+.BeforeCaption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.ContentsDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.Pages
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.TitlesAndFooters
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.IndexProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.ProcTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.IndexAction
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.Data
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Table
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #F0F0F0;
+  border-width: 1px;
+  border-color: #000000;
+}
+.FooterEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.SysTitleAndFooterContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.RowFooterEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ContentFolder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: NONE;
+}
+.RowFooterEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.Index
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ExtendedPage
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 1pt;
+  text-align: center;
+}
+.Container
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Date
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.Caption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.WarnBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Frame
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.HeaderStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.IndexTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.NoteContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Note
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Byline
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FatalBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ProcTitleFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ByContentFolder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: NONE;
+}
+.PagesProcLabel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.RowHeaderFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.WarnContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Cell
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Header
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PageNo
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  text-align: right;
+  vertical-align: top;
+}
+.ContentProcLabel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.HeaderFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.RowHeaderEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.Batch
+{
+  font-family: SAS Monospace, Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+  border-width: 1px;
+  border-color: #000000;
+}
+.ContentItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  list-style-type: NONE;
+}
+.Body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.PagesDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.HeaderEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ErrorContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.DataFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.HeaderStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.DataEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.TitleAndNoteContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.RowFooter
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.IndexItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.BylineContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  border-width: 0;
+  width: 100%;
+}
+.FatalContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.BodyDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  width: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+.Contents
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.RowFooterStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.UserText
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.HeadersAndFooters
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowHeaderEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.ErrorBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ContentProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.RowHeaderStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.PagesItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  list-style-type: NONE;
+}
+.RowHeader
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.AfterCaption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+}
+.RowHeaderStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowHeaderEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.DataStrongFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Footer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FolderAction
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: NONE;
+}
+.HeaderEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.SystemTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ErrorContentFixed
+{
+  font-family: Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.SystemFooter
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FooterEmphasisFixed
+{
+  font-family: Courier New, Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+-->
+</style>
+</head>
+<body onload="startup()" onunload="shutdown()" class="Body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<noscript></noscript>
+<div class="branch">
+<a name="IDX"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class=" SystemTitle">Welcome to Orion Star Sports &amp; Outdoors Sample Data</td>
+</tr>
+<tr>
+<td class=" SystemTitle">Copyright © 2001-2003, SAS Institute Inc. All rights reserved.</td>
+</tr>
+<tr>
+<td class=" SystemTitle">&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td class=" SystemTitle">Orion Star Data Dictionary</td>
+</tr>
+</table><br>
+<div>
+<div align="left">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1px" bordercolor="#000000" summary="Procedure SQL: Query Results">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b Header" scope="col">Library Name</th>
+<th class="l b Header" scope="col">Member Name</th>
+<th class="l b Header" scope="col">Column Name</th>
+<th class="l b Header" scope="col">Column Type</th>
+<th class="r b Header" scope="col">Column Length</th>
+<th class="l b Header" scope="col">Column Label</th>
+<th class="l b Header" scope="col">Column Format</th>
+<th class="l b Header" scope="col">Column Index Type</th>
+<th class="r b Header" scope="col">Sort Order</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CITY</td>
+<td class=" Data">City_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">City ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CITY</td>
+<td class=" Data">City_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">City Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CITY</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Country</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CONTINENT</td>
+<td class=" Data">Continent_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Continent ID</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CONTINENT</td>
+<td class=" Data">Continent_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Continent Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTRY</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Country Abbreviation</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTRY</td>
+<td class=" Data">Country_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Current Name of Country</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTRY</td>
+<td class=" Data">Population</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Population (approx.)</td>
+<td class=" Data">COMMA12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTRY</td>
+<td class=" Data">Country_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Country ID</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">2</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTRY</td>
+<td class=" Data">Continent_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Numeric Rep. for Continent</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTRY</td>
+<td class=" Data">Country_Former_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Former Name of Country</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTY</td>
+<td class=" Data">County_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">County ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTY</td>
+<td class=" Data">County_Type</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">County Type</td>
+<td class=" Data">GEO_TYPE.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">COUNTY</td>
+<td class=" Data">County_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">60</td>
+<td class=" Data">County Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Customer_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Customer ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Customer Country</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Gender</td>
+<td class=" Data">char</td>
+<td class="r Data">1</td>
+<td class=" Data">Customer Gender</td>
+<td class=" Data">$GENDER.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Personal_ID</td>
+<td class=" Data">char</td>
+<td class="r Data">15</td>
+<td class=" Data">Personal ID</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Customer_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Customer Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Customer_FirstName</td>
+<td class=" Data">char</td>
+<td class="r Data">20</td>
+<td class=" Data">Customer First Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Customer_LastName</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Customer Last Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Birth_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Customer Birth Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Customer_Address</td>
+<td class=" Data">char</td>
+<td class="r Data">45</td>
+<td class=" Data">Customer Address</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Street_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Street ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Street_Number</td>
+<td class=" Data">char</td>
+<td class="r Data">8</td>
+<td class=" Data">Street Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER</td>
+<td class=" Data">Customer_Type_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Customer Type ID</td>
+<td class=" Data">8.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER_TYPE</td>
+<td class=" Data">Customer_Type_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Customer Type ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER_TYPE</td>
+<td class=" Data">Customer_Type</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Customer Type Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER_TYPE</td>
+<td class=" Data">Customer_Group_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Customer Group ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">CUSTOMER_TYPE</td>
+<td class=" Data">Customer_Group</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Customer Group Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">DISCOUNT</td>
+<td class=" Data">Product_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">COMPOSITE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">DISCOUNT</td>
+<td class=" Data">Start_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Start Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">COMPOSITE</td>
+<td class="r Data">2</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">DISCOUNT</td>
+<td class=" Data">End_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">5</td>
+<td class=" Data">End_Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">DISCOUNT</td>
+<td class=" Data">Unit_Sales_Price</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Discount Retail Sales Price per Unit</td>
+<td class=" Data">DOLLAR13.2</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">DISCOUNT</td>
+<td class=" Data">Discount</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Discount as Percent of Normal Retail Sales Price</td>
+<td class=" Data">PERCENT.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">GEO_TYPE</td>
+<td class=" Data">Geo_Type_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Geographical Type ID</td>
+<td class=" Data">8.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">GEO_TYPE</td>
+<td class=" Data">Geo_Type_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">20</td>
+<td class=" Data">Geographical Type Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">GEO_TYPE</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Country Abbreviation</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">HOLIDAY</td>
+<td class=" Data">Start</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">2</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">HOLIDAY</td>
+<td class=" Data">Label</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Holiday Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">HOLIDAY</td>
+<td class=" Data">Fmtname</td>
+<td class=" Data">char</td>
+<td class="r Data">7</td>
+<td class=" Data">Format Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">HOLIDAY</td>
+<td class=" Data">HLO</td>
+<td class=" Data">char</td>
+<td class="r Data">1</td>
+<td class=" Data">High Low Other</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">HOLIDAY</td>
+<td class=" Data">Type</td>
+<td class=" Data">char</td>
+<td class="r Data">1</td>
+<td class=" Data">Type Numeric/Charachter</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">HOLIDAY</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Country&#39;s Holidays</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">LOWCASE</td>
+<td class=" Data">_name</td>
+<td class=" Data">char</td>
+<td class="r Data">15</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER</td>
+<td class=" Data">Order_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Order ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER</td>
+<td class=" Data">Order_Type</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Order Type</td>
+<td class=" Data">ORDER_TYPE.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER</td>
+<td class=" Data">Employee_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">5</td>
+<td class=" Data">Employee ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER</td>
+<td class=" Data">Customer_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Customer ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER</td>
+<td class=" Data">Order_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Date Order was placed by Customer</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER</td>
+<td class=" Data">Delivery_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Date Order was Delivered</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER_ITEM</td>
+<td class=" Data">Order_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Order ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER_ITEM</td>
+<td class=" Data">Order_Item_Num</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Order Item Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">2</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER_ITEM</td>
+<td class=" Data">Product_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER_ITEM</td>
+<td class=" Data">Quantity</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Quantity Ordered</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER_ITEM</td>
+<td class=" Data">Total_Retail_Price</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Total Retail Price for This Product</td>
+<td class=" Data">DOLLAR13.2</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER_ITEM</td>
+<td class=" Data">CostPrice_Per_Unit</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Cost Price Per Unit</td>
+<td class=" Data">DOLLAR13.2</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORDER_ITEM</td>
+<td class=" Data">Discount</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Discount in percent of Normal Total Retail Price</td>
+<td class=" Data">PERCENT.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORGANIZATION</td>
+<td class=" Data">Employee_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Employee ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORGANIZATION</td>
+<td class=" Data">Org_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Organization Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORGANIZATION</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Country Abbreviation</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORGANIZATION</td>
+<td class=" Data">Org_Level</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Organization Level Number</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORGANIZATION</td>
+<td class=" Data">Start_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Start Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORGANIZATION</td>
+<td class=" Data">End_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">5</td>
+<td class=" Data">End Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORGANIZATION</td>
+<td class=" Data">Org_Ref_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Organization Reference ID</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORG_LEVEL</td>
+<td class=" Data">Org_Level</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Organization Level Number</td>
+<td class=" Data">4.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">ORG_LEVEL</td>
+<td class=" Data">Org_Level_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Organization Level Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">POSTAL_CODE</td>
+<td class=" Data">Postal_Code_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Postal Code ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">POSTAL_CODE</td>
+<td class=" Data">Postal_Code</td>
+<td class=" Data">char</td>
+<td class="r Data">10</td>
+<td class=" Data">Postal Code</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">POSTAL_CODE</td>
+<td class=" Data">City_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">City Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">POSTAL_CODE</td>
+<td class=" Data">City_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">City ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRICE_LIST</td>
+<td class=" Data">Product_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">COMPOSITE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRICE_LIST</td>
+<td class=" Data">Start_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Start Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">COMPOSITE</td>
+<td class="r Data">2</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRICE_LIST</td>
+<td class=" Data">End_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">5</td>
+<td class=" Data">End Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRICE_LIST</td>
+<td class=" Data">Unit_Cost_Price</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Unit Cost Price</td>
+<td class=" Data">DOLLAR13.2</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRICE_LIST</td>
+<td class=" Data">Unit_Sales_Price</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Unit Sales Price</td>
+<td class=" Data">DOLLAR13.2</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRICE_LIST</td>
+<td class=" Data">Factor</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Yearly increase in Price</td>
+<td class=" Data">5.2</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT</td>
+<td class=" Data">Product_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT</td>
+<td class=" Data">Product_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">45</td>
+<td class=" Data">Product Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT</td>
+<td class=" Data">Supplier_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Supplier ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT</td>
+<td class=" Data">Product_Level</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Product Level</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT</td>
+<td class=" Data">Product_Ref_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product Reference ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT_LEVEL</td>
+<td class=" Data">Product_Level</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Product Level</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT_LEVEL</td>
+<td class=" Data">Product_Level_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Product Level Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT_LIST</td>
+<td class=" Data">Product_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT_LIST</td>
+<td class=" Data">Product_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">45</td>
+<td class=" Data">Product Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT_LIST</td>
+<td class=" Data">Supplier_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Supplier ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT_LIST</td>
+<td class=" Data">Product_Level</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Product Level</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">PRODUCT_LIST</td>
+<td class=" Data">Product_Ref_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product Reference ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Employee_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Employee ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">BOTH</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Start_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Start Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">COMPOSITE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">End_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">5</td>
+<td class=" Data">End Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Job_Title</td>
+<td class=" Data">char</td>
+<td class="r Data">25</td>
+<td class=" Data">Employee Job Title</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Salary</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Employee Annual Salary</td>
+<td class=" Data">DOLLAR12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Gender</td>
+<td class=" Data">char</td>
+<td class="r Data">1</td>
+<td class=" Data">Employee Gender</td>
+<td class=" Data">$GENDER.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Birth_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Employee Birth Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Emp_Hire_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Employee Hire Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Emp_Term_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Employee Termination Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STAFF</td>
+<td class=" Data">Manager_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Manager for Employee</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STATE</td>
+<td class=" Data">State_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">State ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STATE</td>
+<td class=" Data">State_Type</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">State Type</td>
+<td class=" Data">GEO_TYPE.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STATE</td>
+<td class=" Data">State_Code</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">State Code</td>
+<td class=" Data">2.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STATE</td>
+<td class=" Data">State_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">State Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STATE</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Abbreviated Country</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">Street_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Street ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Abbreviated Country</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">Street_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Street Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">City_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">City ID</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">Postal_Code</td>
+<td class=" Data">char</td>
+<td class="r Data">10</td>
+<td class=" Data">Postal Code</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">From_Street_Num</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">From Street Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">To_Street_Num</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">To Street Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">City_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">City Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">Count</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Frequency</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">County_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">County ID</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">STREET_CODE</td>
+<td class=" Data">Postal_Code_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Postal Code ID</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">SUPPLIER</td>
+<td class=" Data">Supplier_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Supplier ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">SUPPLIER</td>
+<td class=" Data">Supplier_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Supplier Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">SUPPLIER</td>
+<td class=" Data">Street_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Street ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">SUPPLIER</td>
+<td class=" Data">Supplier_Address</td>
+<td class=" Data">char</td>
+<td class="r Data">45</td>
+<td class=" Data">Supplier Address</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">SUPPLIER</td>
+<td class=" Data">Sup_Street_Number</td>
+<td class=" Data">char</td>
+<td class="r Data">8</td>
+<td class=" Data">Supplier Street Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORDETAIL</td>
+<td class=" Data">SUPPLIER</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Country</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Customer ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Customer Country</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_Gender</td>
+<td class=" Data">char</td>
+<td class="r Data">1</td>
+<td class=" Data">Customer Gender</td>
+<td class=" Data">$GENDER.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Customer Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_FirstName</td>
+<td class=" Data">char</td>
+<td class="r Data">20</td>
+<td class=" Data">Customer First Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_LastName</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Customer Last Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_Birth_date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Customer Birth Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_Age_Group</td>
+<td class=" Data">char</td>
+<td class="r Data">12</td>
+<td class=" Data">Customer Age Group</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_Type</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Customer Type Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_Group</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Customer Group Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">CUSTOMER_DIM</td>
+<td class=" Data">Customer_Age</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Customer Age</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">Street_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Street Id</td>
+<td class=" Data">15.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">Continent</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Continent Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Country Abbreviation</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">State_Code</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">State Code</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">State</td>
+<td class=" Data">char</td>
+<td class="r Data">25</td>
+<td class=" Data">State</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">Region</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Region Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">Province</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Province Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">County</td>
+<td class=" Data">char</td>
+<td class="r Data">60</td>
+<td class=" Data">County Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">City</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">City Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">Postal_Code</td>
+<td class=" Data">char</td>
+<td class="r Data">10</td>
+<td class=" Data">Postal code</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">GEOGRAPHY_DIM</td>
+<td class=" Data">Street_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">45</td>
+<td class=" Data">Name of Street</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Customer_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Customer ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">2</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Employee_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Employee ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">3</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Street_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Street ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">4</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Order_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Date Order was placed by Customer</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Delivery_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Date Order was Delivered</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Order_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Order ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">6</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Order_Type</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Order Type</td>
+<td class=" Data">ORDER_TYPE.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Product_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">5</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Quantity</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Quantity Ordered</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Total_Retail_Price</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Total Retail Price for This Product</td>
+<td class=" Data">DOLLAR13.2</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">CostPrice_Per_Unit</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Cost Price Per Unit</td>
+<td class=" Data">DOLLAR13.2</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORDER_FACT</td>
+<td class=" Data">Discount</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Discount in percent of Normal Total Retail Price</td>
+<td class=" Data">PERCENT.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Employee_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Employee ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Employee_Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Employee Country</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Company</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Company</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Department</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Department</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Section</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Section</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Group</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Group</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Job_Title</td>
+<td class=" Data">char</td>
+<td class="r Data">25</td>
+<td class=" Data">Job Title</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Employee_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">40</td>
+<td class=" Data">Employee Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Employee_Gender</td>
+<td class=" Data">char</td>
+<td class="r Data">1</td>
+<td class=" Data">Employee Gender</td>
+<td class=" Data">$GENDER.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Salary</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Annual Salary</td>
+<td class=" Data">DOLLAR13.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Employee_Birth_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Employee Birth Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Employee_Hire_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Employee Hire Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Employee_Term_Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Employee Termination Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Manager_Levels</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Levels of Management</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Manager_Level1</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Manager at 1. level</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Manager_Level2</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Manager at 2. level</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Manager_Level3</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Manager at 3. level</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Manager_Level4</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Manager at 4. level</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Manager_Level5</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Manager at 5. level</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">ORGANIZATION_DIM</td>
+<td class=" Data">Manager_Level6</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Manager at 6. level</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">PRODUCT_DIM</td>
+<td class=" Data">Product_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">8</td>
+<td class=" Data">Product ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">PRODUCT_DIM</td>
+<td class=" Data">Product_Line</td>
+<td class=" Data">char</td>
+<td class="r Data">20</td>
+<td class=" Data">Product Line</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">PRODUCT_DIM</td>
+<td class=" Data">Product_Category</td>
+<td class=" Data">char</td>
+<td class="r Data">25</td>
+<td class=" Data">Product Category</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">PRODUCT_DIM</td>
+<td class=" Data">Product_Group</td>
+<td class=" Data">char</td>
+<td class="r Data">25</td>
+<td class=" Data">Product Group</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">PRODUCT_DIM</td>
+<td class=" Data">Product_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">45</td>
+<td class=" Data">Product Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">PRODUCT_DIM</td>
+<td class=" Data">Supplier_Country</td>
+<td class=" Data">char</td>
+<td class="r Data">2</td>
+<td class=" Data">Supplier Country</td>
+<td class=" Data">$COUNTRY.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">PRODUCT_DIM</td>
+<td class=" Data">Supplier_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">30</td>
+<td class=" Data">Supplier Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">PRODUCT_DIM</td>
+<td class=" Data">Supplier_ID</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Supplier ID</td>
+<td class=" Data">12.</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Date</td>
+<td class=" Data">num</td>
+<td class="r Data">4</td>
+<td class=" Data">Date</td>
+<td class=" Data">DATE9.</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">1</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Year</td>
+<td class=" Data">char</td>
+<td class="r Data">4</td>
+<td class=" Data">Year</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Quarter</td>
+<td class=" Data">char</td>
+<td class="r Data">6</td>
+<td class=" Data">Quarter</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Month_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">20</td>
+<td class=" Data">Month Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Week_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">7</td>
+<td class=" Data">Week Name in display format (YYYY-WW)</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Weekday_Name</td>
+<td class=" Data">char</td>
+<td class="r Data">20</td>
+<td class=" Data">Weekday Name</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Month_Num</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Month Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Week_Num</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">European Week Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Weekday_Num</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">US WeekDay Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Weekday_EU</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">European Weekday Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Fiscal_Year</td>
+<td class=" Data">char</td>
+<td class="r Data">4</td>
+<td class=" Data">Fiscal Year</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Fiscal_Quarter</td>
+<td class=" Data">char</td>
+<td class="r Data">6</td>
+<td class=" Data">Fiscal Quarter</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">SIMPLE</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Fiscal_Month_Num</td>
+<td class=" Data">num</td>
+<td class="r Data">3</td>
+<td class=" Data">Fiscal Month Number</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Holiday_US</td>
+<td class=" Data">char</td>
+<td class="r Data">45</td>
+<td class=" Data">USA Holidays</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Holiday_DK</td>
+<td class=" Data">char</td>
+<td class="r Data">45</td>
+<td class=" Data">Danish Holidays</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">WeekDay_DK</td>
+<td class=" Data">char</td>
+<td class="r Data">7</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+<tr>
+<td class=" Data">ORSTAR</td>
+<td class=" Data">TIME_DIM</td>
+<td class=" Data">Month_DK</td>
+<td class=" Data">char</td>
+<td class="r Data">9</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class=" Data">&nbsp;</td>
+<td class="r Data">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+<noscript></noscript>
+</body>
+</html>

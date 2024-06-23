@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE XMI SYSTEM "cwm.dtd">
+<XMI
+xmi.version="1.1"
+timestamp="2018-03-22 14:14:31"
+xmlns:CWM="org.omg.CWM1.0"
+xmlns:CWMRDB="org.omg.CWM1.0/Relational"
+xmlns:CWMOLAP="org.omg.CWM1.0/OLAP"
+xmlns:CWMTFM="org.omg.CWM1.0/Transformation"
+>
+<XMI.header>
+<XMI.documentation>
+<XMI.exporter>Meta Integration Model Bridge</XMI.exporter>
+<XMI.exporterVersion>9.0.2 - 2016-05-23 14:39:19</XMI.exporterVersion>
+</XMI.documentation>
+<XMI.metamodel
+xmi.name="CWM"
+xmi.version="1.0"
+/>
+</XMI.header>
+<XMI.content>
+<CWMRDB:Catalog xmi.id="_4" name="SAS"
+visibility="public"
+>
+<CWM:Namespace.ownedElement>
+<CWMRDB:Schema xmi.id="_5" name="DIFT Orion Target Tables Library"
+visibility="public"
+namespace="_4"
+>
+<CWM:Namespace.ownedElement>
+<CWMRDB:Table xmi.id="_6" name="CURRENT_STAFF"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_5"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_7" name="EMPLOYEE_ID"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_8"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_9" name="START_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_10"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_11" name="END_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_12"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_13" name="JOB_TITLE"
+isNullable="columnNullable"
+visibility="public"
+length="25"
+type="_14"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_15" name="SALARY"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_16"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_17" name="GENDER"
+isNullable="columnNullable"
+visibility="public"
+length="1"
+type="_18"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_19" name="BIRTH_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_20"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_21" name="EMP_HIRE_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_22"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_23" name="EMP_TERM_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_24"
+owner="_6"
+/>
+<CWMRDB:Column xmi.id="_25" name="MANAGER_ID"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_26"
+owner="_6"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWM:Description xmi.id="_27"
+visibility="public"
+language=""
+type="definition"
+body="Employee ID"
+namespace="_6"
+modelElement="_7"
+/>
+<CWM:Description xmi.id="_28"
+visibility="public"
+language=""
+type="definition"
+body="Start Date"
+namespace="_6"
+modelElement="_9"
+/>
+<CWM:Description xmi.id="_29"
+visibility="public"
+language=""
+type="definition"
+body="End Date"
+namespace="_6"
+modelElement="_11"
+/>
+<CWM:Description xmi.id="_30"
+visibility="public"
+language=""
+type="definition"
+body="Employee Job Title"
+namespace="_6"
+modelElement="_13"
+/>
+<CWM:Description xmi.id="_31"
+visibility="public"
+language=""
+type="definition"
+body="Employee Annual Salary"
+namespace="_6"
+modelElement="_15"
+/>
+<CWM:Description xmi.id="_32"
+visibility="public"
+language=""
+type="definition"
+body="Employee Gender"
+namespace="_6"
+modelElement="_17"
+/>
+<CWM:Description xmi.id="_33"
+visibility="public"
+language=""
+type="definition"
+body="Employee Birth Date"
+namespace="_6"
+modelElement="_19"
+/>
+<CWM:Description xmi.id="_34"
+visibility="public"
+language=""
+type="definition"
+body="Employee Hire Date"
+namespace="_6"
+modelElement="_21"
+/>
+<CWM:Description xmi.id="_35"
+visibility="public"
+language=""
+type="definition"
+body="Employee Termination Date"
+namespace="_6"
+modelElement="_23"
+/>
+<CWM:Description xmi.id="_36"
+visibility="public"
+language=""
+type="definition"
+body="Manager for Employee"
+namespace="_6"
+modelElement="_25"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_37" name="TERM_STAFF"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_5"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_38" name="EMPLOYEE_ID"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_39"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_40" name="START_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_41"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_42" name="END_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_43"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_44" name="JOB_TITLE"
+isNullable="columnNullable"
+visibility="public"
+length="25"
+type="_45"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_46" name="SALARY"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_47"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_48" name="GENDER"
+isNullable="columnNullable"
+visibility="public"
+length="1"
+type="_49"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_50" name="BIRTH_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_51"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_52" name="EMP_HIRE_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_53"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_54" name="EMP_TERM_DATE"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_55"
+owner="_37"
+/>
+<CWMRDB:Column xmi.id="_56" name="MANAGER_ID"
+isNullable="columnNullable"
+visibility="public"
+precision="15"
+type="_57"
+owner="_37"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWM:Description xmi.id="_58"
+visibility="public"
+language=""
+type="definition"
+body="Employee ID"
+namespace="_37"
+modelElement="_38"
+/>
+<CWM:Description xmi.id="_59"
+visibility="public"
+language=""
+type="definition"
+body="Start Date"
+namespace="_37"
+modelElement="_40"
+/>
+<CWM:Description xmi.id="_60"
+visibility="public"
+language=""
+type="definition"
+body="End Date"
+namespace="_37"
+modelElement="_42"
+/>
+<CWM:Description xmi.id="_61"
+visibility="public"
+language=""
+type="definition"
+body="Employee Job Title"
+namespace="_37"
+modelElement="_44"
+/>
+<CWM:Description xmi.id="_62"
+visibility="public"
+language=""
+type="definition"
+body="Employee Annual Salary"
+namespace="_37"
+modelElement="_46"
+/>
+<CWM:Description xmi.id="_63"
+visibility="public"
+language=""
+type="definition"
+body="Employee Gender"
+namespace="_37"
+modelElement="_48"
+/>
+<CWM:Description xmi.id="_64"
+visibility="public"
+language=""
+type="definition"
+body="Employee Birth Date"
+namespace="_37"
+modelElement="_50"
+/>
+<CWM:Description xmi.id="_65"
+visibility="public"
+language=""
+type="definition"
+body="Employee Hire Date"
+namespace="_37"
+modelElement="_52"
+/>
+<CWM:Description xmi.id="_66"
+visibility="public"
+language=""
+type="definition"
+body="Employee Termination Date"
+namespace="_37"
+modelElement="_54"
+/>
+<CWM:Description xmi.id="_67"
+visibility="public"
+language=""
+type="definition"
+body="Manager for Employee"
+namespace="_37"
+modelElement="_56"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Schema>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Catalog>
+<CWMRDB:SQLSimpleType xmi.id="_43" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_57" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_41" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_12" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_22" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_51" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_53" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_24" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_16" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_55" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_10" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_26" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_8" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_20" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_39" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_47" name="NUMERIC"
+visibility="public"
+numericPrecision="15"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_45" name="SQL_VARCHAR_8"
+visibility="public"
+characterMaximumLength="25"
+characterOctetLength="1"
+typeNumber="12"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_14" name="SQL_VARCHAR_8"
+visibility="public"
+characterMaximumLength="25"
+characterOctetLength="1"
+typeNumber="12"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_18" name="SQL_VARCHAR_8"
+visibility="public"
+characterMaximumLength="1"
+characterOctetLength="1"
+typeNumber="12"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_49" name="SQL_VARCHAR_8"
+visibility="public"
+characterMaximumLength="1"
+characterOctetLength="1"
+typeNumber="12"
+/>
+</XMI.content>
+</XMI>

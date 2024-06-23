@@ -1,0 +1,19 @@
+Customer_ID,Customer_Country,Customer_Gender,Customer_Name,Customer_Age_Group,Customer_Age,Employee_ID,Order_Date,Delivery_Date,Order_ID,Order_Type,Product_ID,Quantity,Total_Retail_Price,CostPrice_Per_Unit,Discount,Product_Line,Product_Category,Product_Group,Product_Name
+10028,DE,F,Sabrina Weathers,46-60 years,58,99999999,02JAN2003,05JAN2003,1230006445,3,230100700011,1,$252.00,$103.95,,Outdoors,Outdoors,Tents,Hurricane 4
+33957,IT,F,Silvia Fais,15-30 years,23,99999999,02JAN2003,06JAN2003,1230008997,2,220200200066,1,$88.20,$38.40,,Clothes & Shoes,Shoes,Shoes,Twain Inco Men's Street Shoes
+33957,IT,F,Silvia Fais,15-30 years,23,99999999,02JAN2003,06JAN2003,1230008997,2,220200200085,1,$41.40,$18.00,,Clothes & Shoes,Shoes,Shoes,Dundas Rubber Boot
+56009,NL,F,Theresa Seip,46-60 years,53,120540,02JAN2003,02JAN2003,1230009338,1,230100500056,1,$8.00,$3.50,,Outdoors,Outdoors,Outdoor Gear,Knife
+22656,DE,M,Hans Bernhard Hindersdorf,31-45 years,38,99999999,10JAN2003,15JAN2003,1230050590,2,230100500092,1,$115.60,$48.15,,Outdoors,Outdoors,Outdoor Gear,Mayday Sports Pullover
+22656,DE,M,Hans Bernhard Hindersdorf,31-45 years,38,99999999,10JAN2003,15JAN2003,1230050590,2,230100600023,1,$73.40,$36.80,,Outdoors,Outdoors,Sleepingbags,"Expedition 10,Small,Left,Blue Ribbon"
+22656,DE,M,Hans Bernhard Hindersdorf,31-45 years,38,99999999,10JAN2003,15JAN2003,1230050590,2,230100700008,1,$494.40,$241.00,,Outdoors,Outdoors,Tents,Family Holiday 4
+56009,NL,F,T.M.C. Seip,46-60 years,53,99999999,10JAN2003,12JAN2003,1230054133,2,230100500056,1,$8.00,$3.50,,Outdoors,Outdoors,Outdoor Gear,Knife
+33957,IT,F,Silvia Denozo,15-30 years,23,99999999,12JAN2003,16JAN2003,1230062871,2,220200200066,1,$88.20,$38.40,,Clothes & Shoes,Shoes,Shoes,Twain Inco Men's Street Shoes
+56009,NL,F,Theresa Seip,46-60 years,53,120545,12JAN2003,12JAN2003,1230063370,1,230100100044,2,$201.20,$40.30,,Outdoors,Outdoors,Anoraks & Parkas,"Dp Yo Vest Outdoor,Nylon"
+22656,DE,M,Hans Bernhard Hindersdorf,31-45 years,38,99999999,22JAN2003,27JAN2003,1230114927,2,230100600033,1,$85.10,$40.65,,Outdoors,Outdoors,Sleepingbags,"Outback Sleeping Bag, Medium,Right/Blue/Black"
+22656,DE,M,Hans Bernhard Hindersdorf,31-45 years,38,99999999,22JAN2003,27JAN2003,1230114927,2,230100700008,1,$494.40,$241.00,,Outdoors,Outdoors,Tents,Family Holiday 4
+10028,DE,F,Sabrina Weathers,46-60 years,58,120467,23JAN2003,23JAN2003,1230120617,1,230100700011,1,$252.00,$103.95,,Outdoors,Outdoors,Tents,Hurricane 4
+89365,DK,M,Hardy Redneck,61-75 years,68,120292,28JAN2003,28JAN2003,1230148585,1,240100100306,2,$17.80,$4.10,,Sports,Assorted Sports Articles,Assorted Sports articles,Hiclass Mundo 78a 36x72mm Xray
+89365,DK,M,Hardy Redneck,61-75 years,68,120292,28JAN2003,28JAN2003,1230148585,1,240100100552,3,$507.60,$71.95,,Sports,Assorted Sports Articles,Assorted Sports articles,Brt Anorak
+89365,DK,M,Hardy Redneck,61-75 years,68,120294,31JAN2003,31JAN2003,1230166565,1,240100100261,1,$53.00,$22.05,,Sports,Assorted Sports Articles,Assorted Sports articles,Force Classic Children's Jacket
+89365,DK,M,Hardy Redneck,61-75 years,68,120294,31JAN2003,31JAN2003,1230166565,1,240100100552,2,$338.40,$71.95,,Sports,Assorted Sports Articles,Assorted Sports articles,Brt Anorak
+89365,DK,M,Hardy Redneck,61-75 years,68,120294,31JAN2003,31JAN2003,1230166565,1,240100200008,3,$90.00,$12.45,,Sports,Assorted Sports Articles,Darts,Bulls Eye 15 Gram 80% Tungsten Soft

@@ -1,0 +1,3315 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+<!DOCTYPE XMI SYSTEM "cwm.dtd">
+-->
+<XMI
+xmi.version="1.1"
+timestamp="Aug 15 2003 13:53:04"
+xmlns:CWM="org.omg.CWM1.0"
+xmlns:CWMRDB="org.omg.CWM1.0/Relational"
+>
+<XMI.header>
+<XMI.documentation>
+Detailed Data Model for Orion Star
+</XMI.documentation>
+<XMI.metamodel
+xmi.name="CWM"
+xmi.version="1.0"
+/>
+</XMI.header>
+<XMI.content>
+<CWMRDB:Catalog xmi.id="_1" name="Orion Star Sample Data Scenario"
+visibility="public"
+>
+<CWM:Namespace.ownedElement>
+<CWMRDB:Schema xmi.id="_2" name="ORDETAIL"
+visibility="public"
+namespace="_1"
+>
+<CWM:Namespace.ownedElement>
+<CWMRDB:Table xmi.id="_3" name="City"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_4" name="City_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_5"
+owner="_3"
+/>
+<CWMRDB:Column xmi.id="_6" name="City_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_3"
+/>
+<CWMRDB:Column xmi.id="_8" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_9"
+owner="_3"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_10" name="City_ID"
+visibility="public"
+namespace="_3"
+feature="_4"
+keyRelationship="_11"
+/>
+<CWM:Description xmi.id="_12"
+visibility="public"
+language=""
+type="definition"
+body="City"
+namespace="_3"
+modelElement="_3"
+/>
+<CWM:Description xmi.id="_13"
+visibility="public"
+language=""
+type="definition"
+body="City ID"
+namespace="_3"
+modelElement="_4"
+/>
+<CWM:Description xmi.id="_14"
+visibility="public"
+language=""
+type="definition"
+body="City Name"
+namespace="_3"
+modelElement="_6"
+/>
+<CWM:Description xmi.id="_15"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation"
+namespace="_3"
+modelElement="_8"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_16" name="Continent"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_17" name="Continent_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_16"
+/>
+<CWMRDB:Column xmi.id="_18" name="Continent_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_16"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_19" name="Continent_ID"
+visibility="public"
+namespace="_16"
+feature="_17"
+keyRelationship="_20"
+/>
+<CWM:Description xmi.id="_21"
+visibility="public"
+language=""
+type="definition"
+body="Continents mapped from MAPS.CONTINENT"
+namespace="_16"
+modelElement="_16"
+/>
+<CWM:Description xmi.id="_22"
+visibility="public"
+language=""
+type="definition"
+body="Continent ID"
+namespace="_16"
+modelElement="_17"
+/>
+<CWM:Description xmi.id="_23"
+visibility="public"
+language=""
+type="definition"
+body="Continent Name"
+namespace="_16"
+modelElement="_18"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_24" name="Country"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_25" name="Country_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_24"
+/>
+<CWMRDB:Column xmi.id="_26" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_27"
+owner="_24"
+/>
+<CWMRDB:Column xmi.id="_28" name="Population"
+isNullable="columnNullable"
+visibility="public"
+precision="12"
+type="_29"
+owner="_24"
+/>
+<CWMRDB:Column xmi.id="_30" name="Country_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_31"
+owner="_24"
+/>
+<CWMRDB:Column xmi.id="_32" name="Continent_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_24"
+/>
+<CWMRDB:Column xmi.id="_33" name="Country_FormerName"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_24"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:ForeignKey xmi.id="_20" name="Continent_ID"
+visibility="public"
+namespace="_24"
+feature="_32"
+uniqueKey="_19"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:PrimaryKey xmi.id="_34" name="Country"
+visibility="public"
+namespace="_24"
+feature="_26"
+keyRelationship="_35"
+/>
+<CWMRDB:UniqueConstraint xmi.id="_36" name="Country_ID"
+visibility="public"
+namespace="_24"
+feature="_30"
+/>
+<CWM:Description xmi.id="_37"
+visibility="public"
+language=""
+type="definition"
+body="Country Names and abbreviation from MAPS.NAMES and from Internet"
+namespace="_24"
+modelElement="_24"
+/>
+<CWM:Description xmi.id="_38"
+visibility="public"
+language=""
+type="definition"
+body="Current Name of Country"
+namespace="_24"
+modelElement="_25"
+/>
+<CWM:Description xmi.id="_39"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation&#10;SASFormat=$Country."
+namespace="_24"
+modelElement="_26"
+/>
+<CWM:Description xmi.id="_40"
+visibility="public"
+language=""
+type="definition"
+body="Population (approx.)"
+namespace="_24"
+modelElement="_28"
+/>
+<CWM:Description xmi.id="_41"
+visibility="public"
+language=""
+type="definition"
+body="Country ID"
+namespace="_24"
+modelElement="_30"
+/>
+<CWM:Description xmi.id="_42"
+visibility="public"
+language=""
+type="definition"
+body="Numeric Rep. for Continent"
+namespace="_24"
+modelElement="_32"
+/>
+<CWM:Description xmi.id="_43"
+visibility="public"
+language=""
+type="definition"
+body="Former Name of Country"
+namespace="_24"
+modelElement="_33"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_44" name="County"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_45" name="County_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_46"
+owner="_44"
+/>
+<CWMRDB:Column xmi.id="_47" name="County_Type"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_44"
+/>
+<CWMRDB:Column xmi.id="_48" name="County_Name"
+isNullable="columnNullable"
+visibility="public"
+length="60"
+type="_49"
+owner="_44"
+/>
+<CWMRDB:Column xmi.id="_50" name="Province_Type"
+isNullable="columnNoNulls"
+visibility="public"
+type="_51"
+owner="_44"
+/>
+<CWMRDB:Column xmi.id="_52" name="Province_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_44"
+/>
+<CWMRDB:Column xmi.id="_53" name="Region_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_44"
+/>
+<CWMRDB:Column xmi.id="_54" name="Region_Type"
+isNullable="columnNullable"
+visibility="public"
+type="_55"
+owner="_44"
+/>
+<CWMRDB:Column xmi.id="_56" name="State_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_44"
+/>
+<CWMRDB:Column xmi.id="_57" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_9"
+owner="_44"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:ForeignKey xmi.id="_58" name="County_Type"
+visibility="public"
+namespace="_44"
+feature="_47"
+uniqueKey="_59"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:PrimaryKey xmi.id="_60" name="County_ID"
+visibility="public"
+namespace="_44"
+keyRelationship="_61"
+>
+<CWM:UniqueKey.feature>
+<CWM:StructuralFeature xmi.idref="_45"/>
+</CWM:UniqueKey.feature>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_62" name="Province_Type"
+visibility="public"
+namespace="_44"
+feature="_50"
+uniqueKey="_59"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:ForeignKey xmi.id="_63" name="Region_Type"
+visibility="public"
+namespace="_44"
+feature="_54"
+uniqueKey="_59"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:ForeignKey xmi.id="_64" name="State_ID"
+visibility="public"
+namespace="_44"
+feature="_56"
+uniqueKey="_65"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWM:Description xmi.id="_66"
+visibility="public"
+language=""
+type="definition"
+body="County"
+namespace="_44"
+modelElement="_44"
+/>
+<CWM:Description xmi.id="_67"
+visibility="public"
+language=""
+type="definition"
+body="County ID&#10;SASFormat=12."
+namespace="_44"
+modelElement="_45"
+/>
+<CWM:Description xmi.id="_68"
+visibility="public"
+language=""
+type="definition"
+body="County Type&#10;SASFormat=Geo_type."
+namespace="_44"
+modelElement="_47"
+/>
+<CWM:Description xmi.id="_69"
+visibility="public"
+language=""
+type="definition"
+body="County Name"
+namespace="_44"
+modelElement="_48"
+/>
+<CWM:Description xmi.id="_70"
+visibility="public"
+language=""
+type="definition"
+body="Province Type"
+namespace="_44"
+modelElement="_50"
+/>
+<CWM:Description xmi.id="_71"
+visibility="public"
+language=""
+type="definition"
+body="Province Name"
+namespace="_44"
+modelElement="_52"
+/>
+<CWM:Description xmi.id="_72"
+visibility="public"
+language=""
+type="definition"
+body="Region Name"
+namespace="_44"
+modelElement="_53"
+/>
+<CWM:Description xmi.id="_73"
+visibility="public"
+language=""
+type="definition"
+body="Region Type&#10;SASFormat=Geo_type."
+namespace="_44"
+modelElement="_54"
+/>
+<CWM:Description xmi.id="_74"
+visibility="public"
+language=""
+type="definition"
+body="State ID"
+namespace="_44"
+modelElement="_56"
+/>
+<CWM:Description xmi.id="_75"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation"
+namespace="_44"
+modelElement="_57"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_76" name="Customer"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_77" name="Customer_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_78"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_79" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_27"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_80" name="Gender"
+isNullable="columnNullable"
+visibility="public"
+length="1"
+type="_81"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_82" name="Personal_ID"
+isNullable="columnNullable"
+visibility="public"
+length="15"
+type="_83"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_84" name="Customer_Name"
+isNullable="columnNullable"
+visibility="public"
+length="40"
+type="_85"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_86" name="Customer_Firstname"
+isNullable="columnNullable"
+visibility="public"
+length="20"
+type="_87"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_88" name="Customer_Lastname"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_89"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_90" name="Birth_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_92" name="Customer_Address"
+isNullable="columnNullable"
+visibility="public"
+length="45"
+type="_93"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_94" name="Street_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_95"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_96" name="Street_Number"
+isNullable="columnNullable"
+visibility="public"
+length="8"
+type="_97"
+owner="_76"
+/>
+<CWMRDB:Column xmi.id="_98" name="Customer_Type_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_76"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_99" name="Customer_ID"
+visibility="public"
+namespace="_76"
+feature="_77"
+keyRelationship="_100"
+/>
+<CWMRDB:ForeignKey xmi.id="_101" name="Customer_Type_ID"
+visibility="public"
+namespace="_76"
+feature="_98"
+uniqueKey="_102"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:ForeignKey xmi.id="_103" name="Street_ID"
+visibility="public"
+namespace="_76"
+feature="_94"
+uniqueKey="_104"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWM:Description xmi.id="_105"
+visibility="public"
+language=""
+type="definition"
+body="Customer"
+namespace="_76"
+modelElement="_76"
+/>
+<CWM:Description xmi.id="_106"
+visibility="public"
+language=""
+type="definition"
+body="Customer ID&#10;SASFormat=12."
+namespace="_76"
+modelElement="_77"
+/>
+<CWM:Description xmi.id="_107"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation"
+namespace="_76"
+modelElement="_79"
+/>
+<CWM:Description xmi.id="_108"
+visibility="public"
+language=""
+type="definition"
+body="Customer Gender&#10;SASFormat=$Gender."
+namespace="_76"
+modelElement="_80"
+/>
+<CWM:Description xmi.id="_109"
+visibility="public"
+language=""
+type="definition"
+body="Personal ID"
+namespace="_76"
+modelElement="_82"
+/>
+<CWM:Description xmi.id="_110"
+visibility="public"
+language=""
+type="definition"
+body="Customer Name"
+namespace="_76"
+modelElement="_84"
+/>
+<CWM:Description xmi.id="_111"
+visibility="public"
+language=""
+type="definition"
+body="Customer Firstname"
+namespace="_76"
+modelElement="_86"
+/>
+<CWM:Description xmi.id="_112"
+visibility="public"
+language=""
+type="definition"
+body="Customer Lastname"
+namespace="_76"
+modelElement="_88"
+/>
+<CWM:Description xmi.id="_113"
+visibility="public"
+language=""
+type="definition"
+body="Customer Birth Date&#10;SASFormat=Date9."
+namespace="_76"
+modelElement="_90"
+/>
+<CWM:Description xmi.id="_114"
+visibility="public"
+language=""
+type="definition"
+body="Customer Address"
+namespace="_76"
+modelElement="_92"
+/>
+<CWM:Description xmi.id="_115"
+visibility="public"
+language=""
+type="definition"
+body="Street ID&#10;SASFormat=12."
+namespace="_76"
+modelElement="_94"
+/>
+<CWM:Description xmi.id="_116"
+visibility="public"
+language=""
+type="definition"
+body="Customer Street Number"
+namespace="_76"
+modelElement="_96"
+/>
+<CWM:Description xmi.id="_117"
+visibility="public"
+language=""
+type="definition"
+body="Customer Type ID&#10;SASFormat=8."
+namespace="_76"
+modelElement="_98"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_118" name="Customer_Type"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_119" name="Customer_Type_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_118"
+/>
+<CWMRDB:Column xmi.id="_120" name="Customer_Type"
+isNullable="columnNullable"
+visibility="public"
+length="40"
+type="_85"
+owner="_118"
+/>
+<CWMRDB:Column xmi.id="_121" name="Customer_Group_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_118"
+/>
+<CWMRDB:Column xmi.id="_122" name="Customer_Group"
+isNullable="columnNullable"
+visibility="public"
+length="40"
+type="_85"
+owner="_118"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_102" name="Customer_Type_ID"
+visibility="public"
+namespace="_118"
+feature="_119"
+keyRelationship="_101"
+/>
+<CWM:Description xmi.id="_123"
+visibility="public"
+language=""
+type="definition"
+body="Customer Type contains a categorization of customers, based on their buying patterns"
+namespace="_118"
+modelElement="_118"
+/>
+<CWM:Description xmi.id="_124"
+visibility="public"
+language=""
+type="definition"
+body="Customer Type ID&#10;SASFormat=8."
+namespace="_118"
+modelElement="_119"
+/>
+<CWM:Description xmi.id="_125"
+visibility="public"
+language=""
+type="definition"
+body="Customer Type Name"
+namespace="_118"
+modelElement="_120"
+/>
+<CWM:Description xmi.id="_126"
+visibility="public"
+language=""
+type="definition"
+body="Customer Group ID&#10;SASFormat=8."
+namespace="_118"
+modelElement="_121"
+/>
+<CWM:Description xmi.id="_127"
+visibility="public"
+language=""
+type="definition"
+body="Customer Group Name"
+namespace="_118"
+modelElement="_122"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_128" name="Discount"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_129" name="Product_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_128"
+/>
+<CWMRDB:Column xmi.id="_130" name="Start_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_128"
+/>
+<CWMRDB:Column xmi.id="_131" name="End_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_128"
+/>
+<CWMRDB:Column xmi.id="_132" name="Unit_Sales_Price"
+isNullable="columnNullable"
+visibility="public"
+precision="13"
+scale="2"
+type="_133"
+owner="_128"
+/>
+<CWMRDB:Column xmi.id="_134" name="Discount"
+isNullable="columnNullable"
+visibility="public"
+precision="5"
+scale="2"
+type="_135"
+owner="_128"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_136" name="Discount"
+visibility="public"
+namespace="_128"
+>
+<CWM:UniqueKey.feature>
+<CWM:StructuralFeature xmi.idref="_129"/>
+<CWM:StructuralFeature xmi.idref="_130"/>
+</CWM:UniqueKey.feature>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_137" name="Product_ID"
+visibility="public"
+namespace="_128"
+feature="_129"
+uniqueKey="_138"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWM:Description xmi.id="_139"
+visibility="public"
+language=""
+type="definition"
+body="Discount"
+namespace="_128"
+modelElement="_128"
+/>
+<CWM:Description xmi.id="_140"
+visibility="public"
+language=""
+type="definition"
+body="Product ID&#10;SASFormat=12."
+namespace="_128"
+modelElement="_129"
+/>
+<CWM:Description xmi.id="_141"
+visibility="public"
+language=""
+type="definition"
+body="Start Date&#10;SASFormat=DATE9."
+namespace="_128"
+modelElement="_130"
+/>
+<CWM:Description xmi.id="_142"
+visibility="public"
+language=""
+type="definition"
+body="End Date&#10;SASFormat=DATE9."
+namespace="_128"
+modelElement="_131"
+/>
+<CWM:Description xmi.id="_143"
+visibility="public"
+language=""
+type="definition"
+body="Discount Retail Sales Price per Unit&#10;SASFormat=DOLLARS12.2"
+namespace="_128"
+modelElement="_132"
+/>
+<CWM:Description xmi.id="_144"
+visibility="public"
+language=""
+type="definition"
+body="Discount in percent of Normal Total Retail Price&#10;&#10;SASFormat=PERCENT."
+namespace="_128"
+modelElement="_134"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_145" name="Geo_Type"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_146" name="Geo_Type_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_147"
+owner="_145"
+/>
+<CWMRDB:Column xmi.id="_148" name="Geo_Type_Name"
+isNullable="columnNullable"
+visibility="public"
+length="20"
+type="_87"
+owner="_145"
+/>
+<CWMRDB:Column xmi.id="_149" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_27"
+owner="_145"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_59" name="Geo_Type_ID"
+visibility="public"
+namespace="_145"
+feature="_146"
+>
+<CWM:UniqueKey.keyRelationship>
+<CWM:KeyRelationship xmi.idref="_58"/>
+<CWM:KeyRelationship xmi.idref="_62"/>
+<CWM:KeyRelationship xmi.idref="_150"/>
+<CWM:KeyRelationship xmi.idref="_63"/>
+</CWM:UniqueKey.keyRelationship>
+</CWMRDB:PrimaryKey>
+<CWM:Description xmi.id="_151"
+visibility="public"
+language=""
+type="definition"
+body="Geographical Type"
+namespace="_145"
+modelElement="_145"
+/>
+<CWM:Description xmi.id="_152"
+visibility="public"
+language=""
+type="definition"
+body="Geographical Type ID"
+namespace="_145"
+modelElement="_146"
+/>
+<CWM:Description xmi.id="_153"
+visibility="public"
+language=""
+type="definition"
+body="Geographical Type Name"
+namespace="_145"
+modelElement="_148"
+/>
+<CWM:Description xmi.id="_154"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation"
+namespace="_145"
+modelElement="_149"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_155" name="Order_Item"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_156" name="Order_Item_Num"
+isNullable="columnNullable"
+visibility="public"
+type="_157"
+owner="_155"
+/>
+<CWMRDB:Column xmi.id="_158" name="Product_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_159"
+owner="_155"
+/>
+<CWMRDB:Column xmi.id="_160" name="Quantity"
+isNullable="columnNullable"
+visibility="public"
+type="_157"
+owner="_155"
+/>
+<CWMRDB:Column xmi.id="_161" name="Total_Retail_Price"
+isNullable="columnNullable"
+visibility="public"
+precision="13"
+scale="2"
+type="_133"
+owner="_155"
+/>
+<CWMRDB:Column xmi.id="_162" name="CostPrice_Per_Unit"
+isNullable="columnNullable"
+visibility="public"
+precision="13"
+scale="2"
+type="_133"
+owner="_155"
+/>
+<CWMRDB:Column xmi.id="_163" name="Discount"
+isNullable="columnNullable"
+visibility="public"
+precision="5"
+scale="2"
+type="_135"
+owner="_155"
+/>
+<CWMRDB:Column xmi.id="_164" name="Order_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_165"
+owner="_155"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_166" name="Order_Item"
+visibility="public"
+namespace="_155"
+>
+<CWM:UniqueKey.feature>
+<CWM:StructuralFeature xmi.idref="_164"/>
+<CWM:StructuralFeature xmi.idref="_156"/>
+</CWM:UniqueKey.feature>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_167" name="Order_ID"
+visibility="public"
+namespace="_155"
+feature="_164"
+uniqueKey="_168"
+deleteRule="importedKeyRestrict"
+updateRule="importedKeyRestrict"
+/>
+<CWMRDB:ForeignKey xmi.id="_169" name="Product_ID"
+visibility="public"
+namespace="_155"
+feature="_158"
+uniqueKey="_138"
+deleteRule="importedKeyRestrict"
+updateRule="importedKeyRestrict"
+/>
+<CWM:Description xmi.id="_170"
+visibility="public"
+language=""
+type="definition"
+body="Order Item"
+namespace="_155"
+modelElement="_155"
+/>
+<CWM:Description xmi.id="_171"
+visibility="public"
+language=""
+type="definition"
+body="Order Item Number"
+namespace="_155"
+modelElement="_156"
+/>
+<CWM:Description xmi.id="_172"
+visibility="public"
+language=""
+type="definition"
+body="Product ID&#10;SASFormat=12."
+namespace="_155"
+modelElement="_158"
+/>
+<CWM:Description xmi.id="_173"
+visibility="public"
+language=""
+type="definition"
+body="Quantity Ordered"
+namespace="_155"
+modelElement="_160"
+/>
+<CWM:Description xmi.id="_174"
+visibility="public"
+language=""
+type="definition"
+body="Total Retail Price for this Product&#10;SASFormat=Dollar13.2"
+namespace="_155"
+modelElement="_161"
+/>
+<CWM:Description xmi.id="_175"
+visibility="public"
+language=""
+type="definition"
+body="Cost Price per Unit"
+namespace="_155"
+modelElement="_162"
+/>
+<CWM:Description xmi.id="_176"
+visibility="public"
+language=""
+type="definition"
+body="Discount in percent of Normal Total Retail Price&#10;SASFormat=Percent."
+namespace="_155"
+modelElement="_163"
+/>
+<CWM:Description xmi.id="_177"
+visibility="public"
+language=""
+type="definition"
+body="Order ID"
+namespace="_155"
+modelElement="_164"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_178" name="Orders"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_179" name="Order_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_165"
+owner="_178"
+/>
+<CWMRDB:Column xmi.id="_180" name="Employee_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_178"
+/>
+<CWMRDB:Column xmi.id="_181" name="Customer_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_178"
+/>
+<CWMRDB:Column xmi.id="_182" name="Order_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_178"
+/>
+<CWMRDB:Column xmi.id="_183" name="Delivery_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_178"
+/>
+<CWMRDB:Column xmi.id="_184" name="Order_Type"
+isNullable="columnNullable"
+visibility="public"
+type="_185"
+owner="_178"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:ForeignKey xmi.id="_100" name="Customer_ID"
+visibility="public"
+namespace="_178"
+feature="_181"
+uniqueKey="_99"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:PrimaryKey xmi.id="_168" name="Order_ID"
+visibility="public"
+namespace="_178"
+feature="_179"
+keyRelationship="_167"
+/>
+<CWMRDB:ForeignKey xmi.id="_186" name="Employee_ID"
+visibility="public"
+namespace="_178"
+feature="_180"
+uniqueKey="_187"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWM:Description xmi.id="_188"
+visibility="public"
+language=""
+type="definition"
+body="Orders"
+namespace="_178"
+modelElement="_178"
+/>
+<CWM:Description xmi.id="_189"
+visibility="public"
+language=""
+type="definition"
+body="Order ID&#10;SASFormat=12."
+namespace="_178"
+modelElement="_179"
+/>
+<CWM:Description xmi.id="_190"
+visibility="public"
+language=""
+type="definition"
+body="Employee ID&#10;SASFormat=12."
+namespace="_178"
+modelElement="_180"
+/>
+<CWM:Description xmi.id="_191"
+visibility="public"
+language=""
+type="definition"
+body="Customer ID&#10;SASFormat=12."
+namespace="_178"
+modelElement="_181"
+/>
+<CWM:Description xmi.id="_192"
+visibility="public"
+language=""
+type="definition"
+body="Date Order was placed by Customer&#10;SASFormat=Date9."
+namespace="_178"
+modelElement="_182"
+/>
+<CWM:Description xmi.id="_193"
+visibility="public"
+language=""
+type="definition"
+body="Date Order was Delivered&#10;SASFormat=Date9."
+namespace="_178"
+modelElement="_183"
+/>
+<CWM:Description xmi.id="_194"
+visibility="public"
+language=""
+type="definition"
+body="Order Type&#10;SASFormat=Order_Type."
+namespace="_178"
+modelElement="_184"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_195" name="Org_Level"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_196" name="Org_Level"
+isNullable="columnNullable"
+visibility="public"
+type="_197"
+owner="_195"
+/>
+<CWMRDB:Column xmi.id="_198" name="Org_Level_Name"
+isNullable="columnNullable"
+visibility="public"
+length="40"
+type="_85"
+owner="_195"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_199" name="Org_Level"
+visibility="public"
+namespace="_195"
+feature="_196"
+keyRelationship="_200"
+/>
+<CWM:Description xmi.id="_201"
+visibility="public"
+language=""
+type="definition"
+body="Orion Star organization levels"
+namespace="_195"
+modelElement="_195"
+/>
+<CWM:Description xmi.id="_202"
+visibility="public"
+language=""
+type="definition"
+body="Organization Level Number"
+namespace="_195"
+modelElement="_196"
+/>
+<CWM:Description xmi.id="_203"
+visibility="public"
+language=""
+type="definition"
+body="Organization Level Name"
+namespace="_195"
+modelElement="_198"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_204" name="Organization"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_205" name="Employee_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_206"
+owner="_204"
+/>
+<CWMRDB:Column xmi.id="_207" name="Org_Name"
+isNullable="columnNullable"
+visibility="public"
+length="40"
+type="_85"
+owner="_204"
+/>
+<CWMRDB:Column xmi.id="_208" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_27"
+owner="_204"
+/>
+<CWMRDB:Column xmi.id="_209" name="Org_Level"
+isNullable="columnNullable"
+visibility="public"
+type="_197"
+owner="_204"
+/>
+<CWMRDB:Column xmi.id="_210" name="Org_Ref_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_204"
+/>
+<CWMRDB:Column xmi.id="_211" name="Start_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_204"
+/>
+<CWMRDB:Column xmi.id="_212" name="End_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_204"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_187" name="Employee_ID"
+visibility="public"
+namespace="_204"
+feature="_205"
+>
+<CWM:UniqueKey.keyRelationship>
+<CWM:KeyRelationship xmi.idref="_213"/>
+<CWM:KeyRelationship xmi.idref="_214"/>
+<CWM:KeyRelationship xmi.idref="_186"/>
+</CWM:UniqueKey.keyRelationship>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_213" name="Org_Ref"
+visibility="public"
+namespace="_204"
+feature="_210"
+uniqueKey="_187"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:ForeignKey xmi.id="_200" name="Org_Level"
+visibility="public"
+namespace="_204"
+feature="_209"
+uniqueKey="_199"
+deleteRule="importedKeyRestrict"
+updateRule="importedKeyRestrict"
+/>
+<CWM:Description xmi.id="_215"
+visibility="public"
+language=""
+type="definition"
+body="Orion Star organization at different levels"
+namespace="_204"
+modelElement="_204"
+/>
+<CWM:Description xmi.id="_216"
+visibility="public"
+language=""
+type="definition"
+body="Employee ID&#10;SASFormat=12."
+namespace="_204"
+modelElement="_205"
+/>
+<CWM:Description xmi.id="_217"
+visibility="public"
+language=""
+type="definition"
+body="Organization Name"
+namespace="_204"
+modelElement="_207"
+/>
+<CWM:Description xmi.id="_218"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation"
+namespace="_204"
+modelElement="_208"
+/>
+<CWM:Description xmi.id="_219"
+visibility="public"
+language=""
+type="definition"
+body="Organization Level Number"
+namespace="_204"
+modelElement="_209"
+/>
+<CWM:Description xmi.id="_220"
+visibility="public"
+language=""
+type="definition"
+body="Organization reference ID&#10;SASFormat=12."
+namespace="_204"
+modelElement="_210"
+/>
+<CWM:Description xmi.id="_221"
+visibility="public"
+language=""
+type="definition"
+body="Start Date&#10;SASFormat=Date9."
+namespace="_204"
+modelElement="_211"
+/>
+<CWM:Description xmi.id="_222"
+visibility="public"
+language=""
+type="definition"
+body="End Date&#10;SASFormat=Date9."
+namespace="_204"
+modelElement="_212"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_223" name="Postal_Code"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_224" name="Postal_Code_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_225"
+owner="_223"
+/>
+<CWMRDB:Column xmi.id="_226" name="Postal_Code"
+isNullable="columnNullable"
+visibility="public"
+length="10"
+type="_227"
+owner="_223"
+/>
+<CWMRDB:Column xmi.id="_228" name="City_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_223"
+/>
+<CWMRDB:Column xmi.id="_229" name="City_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_223"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:ForeignKey xmi.id="_11" name="City_ID"
+visibility="public"
+namespace="_223"
+feature="_228"
+uniqueKey="_10"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:PrimaryKey xmi.id="_230" name="Postal_Code_ID"
+visibility="public"
+namespace="_223"
+feature="_224"
+keyRelationship="_231"
+/>
+<CWM:Description xmi.id="_232"
+visibility="public"
+language=""
+type="definition"
+body="Postal Code"
+namespace="_223"
+modelElement="_223"
+/>
+<CWM:Description xmi.id="_233"
+visibility="public"
+language=""
+type="definition"
+body="Postal Code ID&#10;SASFormat=12."
+namespace="_223"
+modelElement="_224"
+/>
+<CWM:Description xmi.id="_234"
+visibility="public"
+language=""
+type="definition"
+body="Postal Code"
+namespace="_223"
+modelElement="_226"
+/>
+<CWM:Description xmi.id="_235"
+visibility="public"
+language=""
+type="definition"
+body="City ID&#10;SASFormat=12."
+namespace="_223"
+modelElement="_228"
+/>
+<CWM:Description xmi.id="_236"
+visibility="public"
+language=""
+type="definition"
+body="City Name"
+namespace="_223"
+modelElement="_229"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_237" name="Price_List"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_238" name="Product_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_159"
+owner="_237"
+/>
+<CWMRDB:Column xmi.id="_239" name="Start_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_237"
+/>
+<CWMRDB:Column xmi.id="_240" name="End_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_237"
+/>
+<CWMRDB:Column xmi.id="_241" name="Unit_Cost_Price"
+isNullable="columnNullable"
+visibility="public"
+precision="13"
+scale="2"
+type="_133"
+owner="_237"
+/>
+<CWMRDB:Column xmi.id="_242" name="Unit_Sales_Price"
+isNullable="columnNullable"
+visibility="public"
+precision="13"
+scale="2"
+type="_133"
+owner="_237"
+/>
+<CWMRDB:Column xmi.id="_243" name="Factor"
+isNullable="columnNullable"
+visibility="public"
+precision="5"
+scale="2"
+type="_135"
+owner="_237"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_244" name="Price_List"
+visibility="public"
+namespace="_237"
+>
+<CWM:UniqueKey.feature>
+<CWM:StructuralFeature xmi.idref="_238"/>
+<CWM:StructuralFeature xmi.idref="_239"/>
+</CWM:UniqueKey.feature>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_245" name="Product_ID"
+visibility="public"
+namespace="_237"
+feature="_238"
+uniqueKey="_138"
+deleteRule="importedKeyRestrict"
+updateRule="importedKeyRestrict"
+/>
+<CWM:Description xmi.id="_246"
+visibility="public"
+language=""
+type="definition"
+body="Product Prices over Time"
+namespace="_237"
+modelElement="_237"
+/>
+<CWM:Description xmi.id="_247"
+visibility="public"
+language=""
+type="definition"
+body="Product ID&#10;SASFormat=12."
+namespace="_237"
+modelElement="_238"
+/>
+<CWM:Description xmi.id="_248"
+visibility="public"
+language=""
+type="definition"
+body="Start Date&#10;SASFormat=Date9."
+namespace="_237"
+modelElement="_239"
+/>
+<CWM:Description xmi.id="_249"
+visibility="public"
+language=""
+type="definition"
+body="End Date&#10;SASFormat=Date9."
+namespace="_237"
+modelElement="_240"
+/>
+<CWM:Description xmi.id="_250"
+visibility="public"
+language=""
+type="definition"
+body="Unit Cost Price&#10;SASFormat=Dollar13.2"
+namespace="_237"
+modelElement="_241"
+/>
+<CWM:Description xmi.id="_251"
+visibility="public"
+language=""
+type="definition"
+body="Unit Sales Price&#10;SASFormat=Dollar13.2"
+namespace="_237"
+modelElement="_242"
+/>
+<CWM:Description xmi.id="_252"
+visibility="public"
+language=""
+type="definition"
+body="Yearly increase in Price&#10;SASFormat=5.2"
+namespace="_237"
+modelElement="_243"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_253" name="Product_List"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_254" name="Product_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_159"
+owner="_253"
+/>
+<CWMRDB:Column xmi.id="_255" name="Product_Name"
+isNullable="columnNullable"
+visibility="public"
+length="45"
+type="_93"
+owner="_253"
+/>
+<CWMRDB:Column xmi.id="_256" name="Supplier_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_257"
+owner="_253"
+/>
+<CWMRDB:Column xmi.id="_258" name="Product_Ref_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_253"
+/>
+<CWMRDB:Column xmi.id="_259" name="Product_Level"
+isNullable="columnNullable"
+visibility="public"
+type="_260"
+owner="_253"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_138" name="Product_ID"
+visibility="public"
+namespace="_253"
+feature="_254"
+>
+<CWM:UniqueKey.keyRelationship>
+<CWM:KeyRelationship xmi.idref="_169"/>
+<CWM:KeyRelationship xmi.idref="_245"/>
+<CWM:KeyRelationship xmi.idref="_137"/>
+<CWM:KeyRelationship xmi.idref="_261"/>
+</CWM:UniqueKey.keyRelationship>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_262" name="Supplier_ID"
+visibility="public"
+namespace="_253"
+feature="_256"
+uniqueKey="_263"
+deleteRule="importedKeyRestrict"
+updateRule="importedKeyRestrict"
+/>
+<CWMRDB:ForeignKey xmi.id="_264" name="Product_Level"
+visibility="public"
+namespace="_253"
+feature="_259"
+uniqueKey="_265"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:ForeignKey xmi.id="_261" name="Product_Ref_ID"
+visibility="public"
+namespace="_253"
+feature="_258"
+uniqueKey="_138"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWM:Description xmi.id="_266"
+visibility="public"
+language=""
+type="definition"
+body="Orion Star Product List"
+namespace="_253"
+modelElement="_253"
+/>
+<CWM:Description xmi.id="_267"
+visibility="public"
+language=""
+type="definition"
+body="Product ID&#10;SASFormat=12."
+namespace="_253"
+modelElement="_254"
+/>
+<CWM:Description xmi.id="_268"
+visibility="public"
+language=""
+type="definition"
+body="Product Name"
+namespace="_253"
+modelElement="_255"
+/>
+<CWM:Description xmi.id="_269"
+visibility="public"
+language=""
+type="definition"
+body="Supplier ID&#10;SASFormat=12."
+namespace="_253"
+modelElement="_256"
+/>
+<CWM:Description xmi.id="_270"
+visibility="public"
+language=""
+type="definition"
+body="Product Reference ID&#10;SASFormat=12."
+namespace="_253"
+modelElement="_258"
+/>
+<CWM:Description xmi.id="_271"
+visibility="public"
+language=""
+type="definition"
+body="Product Level"
+namespace="_253"
+modelElement="_259"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_272" name="Product_Level"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_273" name="Product_Level"
+isNullable="columnNoNulls"
+visibility="public"
+type="_5"
+owner="_272"
+/>
+<CWMRDB:Column xmi.id="_274" name="Product_Level_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_272"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_265" name="Product_Level"
+visibility="public"
+namespace="_272"
+feature="_273"
+keyRelationship="_264"
+/>
+<CWM:Description xmi.id="_275"
+visibility="public"
+language=""
+type="definition"
+body="Product Level"
+namespace="_272"
+modelElement="_272"
+/>
+<CWM:Description xmi.id="_276"
+visibility="public"
+language=""
+type="definition"
+body="Product Level"
+namespace="_272"
+modelElement="_273"
+/>
+<CWM:Description xmi.id="_277"
+visibility="public"
+language=""
+type="definition"
+body="Product Level Name"
+namespace="_272"
+modelElement="_274"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_278" name="Staff"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_279" name="Employee_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_5"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_280" name="Start_Date"
+isNullable="columnNoNulls"
+visibility="public"
+type="_91"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_281" name="End_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_282" name="Salary"
+isNullable="columnNullable"
+visibility="public"
+precision="12"
+type="_29"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_283" name="Birth_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_284" name="Gender"
+isNullable="columnNullable"
+visibility="public"
+length="1"
+type="_81"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_285" name="Job_Title"
+isNullable="columnNullable"
+visibility="public"
+length="25"
+type="_286"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_287" name="Emp_Hire_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_288" name="Emp_Term_Date"
+isNullable="columnNullable"
+visibility="public"
+type="_91"
+owner="_278"
+/>
+<CWMRDB:Column xmi.id="_289" name="Manager_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_278"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_290" name="Staff"
+visibility="public"
+namespace="_278"
+>
+<CWM:UniqueKey.feature>
+<CWM:StructuralFeature xmi.idref="_279"/>
+<CWM:StructuralFeature xmi.idref="_280"/>
+</CWM:UniqueKey.feature>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_214" name="Employee_ID"
+visibility="public"
+namespace="_278"
+feature="_279"
+uniqueKey="_187"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWM:Description xmi.id="_291"
+visibility="public"
+language=""
+type="definition"
+body="Orion Star Employees"
+namespace="_278"
+modelElement="_278"
+/>
+<CWM:Description xmi.id="_292"
+visibility="public"
+language=""
+type="definition"
+body="Employee ID&#10;SASFormat=12."
+namespace="_278"
+modelElement="_279"
+/>
+<CWM:Description xmi.id="_293"
+visibility="public"
+language=""
+type="definition"
+body="Start Date&#10;SASFormat=Date9."
+namespace="_278"
+modelElement="_280"
+/>
+<CWM:Description xmi.id="_294"
+visibility="public"
+language=""
+type="definition"
+body="End Date&#10;SASFormat=Date9."
+namespace="_278"
+modelElement="_281"
+/>
+<CWM:Description xmi.id="_295"
+visibility="public"
+language=""
+type="definition"
+body="Employee Annual Salary&#10;SASFormat=Dollar12."
+namespace="_278"
+modelElement="_282"
+/>
+<CWM:Description xmi.id="_296"
+visibility="public"
+language=""
+type="definition"
+body="Employee Birth Date&#10;SASFormat=Date9."
+namespace="_278"
+modelElement="_283"
+/>
+<CWM:Description xmi.id="_297"
+visibility="public"
+language=""
+type="definition"
+body="Employee Gender&#10;SASFormat=Gender."
+namespace="_278"
+modelElement="_284"
+/>
+<CWM:Description xmi.id="_298"
+visibility="public"
+language=""
+type="definition"
+body="Employee Job Title"
+namespace="_278"
+modelElement="_285"
+/>
+<CWM:Description xmi.id="_299"
+visibility="public"
+language=""
+type="definition"
+body="Employee Hire Date&#10;SASFormat=Date9."
+namespace="_278"
+modelElement="_287"
+/>
+<CWM:Description xmi.id="_300"
+visibility="public"
+language=""
+type="definition"
+body="Employee Termination Date&#10;SASFormat=date9."
+namespace="_278"
+modelElement="_288"
+/>
+<CWM:Description xmi.id="_301"
+visibility="public"
+language=""
+type="definition"
+body="Manager for Employee&#10;SASFormat=12."
+namespace="_278"
+modelElement="_289"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_302" name="State"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_303" name="State_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_5"
+owner="_302"
+/>
+<CWMRDB:Column xmi.id="_304" name="State_Type"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_302"
+/>
+<CWMRDB:Column xmi.id="_305" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_27"
+owner="_302"
+/>
+<CWMRDB:Column xmi.id="_306" name="State_Code"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_307"
+owner="_302"
+/>
+<CWMRDB:Column xmi.id="_308" name="State_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_89"
+owner="_302"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:ForeignKey xmi.id="_35" name="Country"
+visibility="public"
+namespace="_302"
+feature="_305"
+uniqueKey="_34"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWMRDB:PrimaryKey xmi.id="_65" name="State_ID"
+visibility="public"
+namespace="_302"
+feature="_303"
+>
+<CWM:UniqueKey.keyRelationship>
+<CWM:KeyRelationship xmi.idref="_64"/>
+</CWM:UniqueKey.keyRelationship>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_150" name="State_Type"
+visibility="public"
+namespace="_302"
+feature="_304"
+uniqueKey="_59"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWM:Description xmi.id="_309"
+visibility="public"
+language=""
+type="definition"
+body="State has US States and German Bundesland"
+namespace="_302"
+modelElement="_302"
+/>
+<CWM:Description xmi.id="_310"
+visibility="public"
+language=""
+type="definition"
+body="State ID"
+namespace="_302"
+modelElement="_303"
+/>
+<CWM:Description xmi.id="_311"
+visibility="public"
+language=""
+type="definition"
+body="StateType ID&#10;SASFormat=Geo_type."
+namespace="_302"
+modelElement="_304"
+/>
+<CWM:Description xmi.id="_312"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation&#10;SASFormat=$Country."
+namespace="_302"
+modelElement="_305"
+/>
+<CWM:Description xmi.id="_313"
+visibility="public"
+language=""
+type="definition"
+body="State Code. In USA this is the 2 letter State Code, whereas the full Name will be in State Name"
+namespace="_302"
+modelElement="_306"
+/>
+<CWM:Description xmi.id="_314"
+visibility="public"
+language=""
+type="definition"
+body="State Name"
+namespace="_302"
+modelElement="_308"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_315" name="Street_Code"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_316" name="Street_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_95"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_317" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_27"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_318" name="Street_Name"
+isNullable="columnNullable"
+visibility="public"
+length="40"
+type="_85"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_319" name="City_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_320" name="Postal_Code"
+isNullable="columnNullable"
+visibility="public"
+length="10"
+type="_227"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_321" name="To_Street_Num"
+isNullable="columnNullable"
+visibility="public"
+type="_157"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_322" name="City_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_89"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_323" name="Postal_Code_ID"
+isNullable="columnNoNulls"
+visibility="public"
+type="_225"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_324" name="From_Street_Num"
+isNullable="columnNullable"
+visibility="public"
+type="_157"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_325" name="Count"
+isNullable="columnNullable"
+visibility="public"
+type="_326"
+owner="_315"
+/>
+<CWMRDB:Column xmi.id="_327" name="County_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_315"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:ForeignKey xmi.id="_231" name="Postal_Code_ID"
+visibility="public"
+namespace="_315"
+feature="_323"
+uniqueKey="_230"
+deleteRule="importedKeyRestrict"
+updateRule="importedKeyRestrict"
+/>
+<CWMRDB:PrimaryKey xmi.id="_104" name="Street_ID"
+visibility="public"
+namespace="_315"
+feature="_316"
+>
+<CWM:UniqueKey.keyRelationship>
+<CWM:KeyRelationship xmi.idref="_328"/>
+<CWM:KeyRelationship xmi.idref="_103"/>
+</CWM:UniqueKey.keyRelationship>
+</CWMRDB:PrimaryKey>
+<CWMRDB:ForeignKey xmi.id="_61" name="County_ID"
+visibility="public"
+namespace="_315"
+uniqueKey="_60"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+>
+<CWM:KeyRelationship.feature>
+<CWM:StructuralFeature xmi.idref="_327"/>
+</CWM:KeyRelationship.feature>
+</CWMRDB:ForeignKey>
+<CWM:Description xmi.id="_329"
+visibility="public"
+language=""
+type="definition"
+body="Street Code"
+namespace="_315"
+modelElement="_315"
+/>
+<CWM:Description xmi.id="_330"
+visibility="public"
+language=""
+type="definition"
+body="Street ID&#10;SASFormat=12."
+namespace="_315"
+modelElement="_316"
+/>
+<CWM:Description xmi.id="_331"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation"
+namespace="_315"
+modelElement="_317"
+/>
+<CWM:Description xmi.id="_332"
+visibility="public"
+language=""
+type="definition"
+body="Street Name"
+namespace="_315"
+modelElement="_318"
+/>
+<CWM:Description xmi.id="_333"
+visibility="public"
+language=""
+type="definition"
+body="City ID&#10;SASFormat=12."
+namespace="_315"
+modelElement="_319"
+/>
+<CWM:Description xmi.id="_334"
+visibility="public"
+language=""
+type="definition"
+body="Postal Code"
+namespace="_315"
+modelElement="_320"
+/>
+<CWM:Description xmi.id="_335"
+visibility="public"
+language=""
+type="definition"
+body="To Street Number"
+namespace="_315"
+modelElement="_321"
+/>
+<CWM:Description xmi.id="_336"
+visibility="public"
+language=""
+type="definition"
+body="City Name"
+namespace="_315"
+modelElement="_322"
+/>
+<CWM:Description xmi.id="_337"
+visibility="public"
+language=""
+type="definition"
+body="Postal Code ID&#10;SASFormat=12."
+namespace="_315"
+modelElement="_323"
+/>
+<CWM:Description xmi.id="_338"
+visibility="public"
+language=""
+type="definition"
+body="From Street Number"
+namespace="_315"
+modelElement="_324"
+/>
+<CWM:Description xmi.id="_339"
+visibility="public"
+language=""
+type="definition"
+body="Frequency of Occurences"
+namespace="_315"
+modelElement="_325"
+/>
+<CWM:Description xmi.id="_340"
+visibility="public"
+language=""
+type="definition"
+body="County ID&#10;SASFormat=12."
+namespace="_315"
+modelElement="_327"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:Table xmi.id="_341" name="Supplier"
+isSystem="false"
+isTemporary="false"
+visibility="public"
+namespace="_2"
+>
+<CWM:Classifier.feature>
+<CWMRDB:Column xmi.id="_342" name="Supplier_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_257"
+owner="_341"
+/>
+<CWMRDB:Column xmi.id="_343" name="Supplier_Name"
+isNullable="columnNullable"
+visibility="public"
+length="30"
+type="_7"
+owner="_341"
+/>
+<CWMRDB:Column xmi.id="_344" name="Street_ID"
+isNullable="columnNullable"
+visibility="public"
+type="_5"
+owner="_341"
+/>
+<CWMRDB:Column xmi.id="_345" name="Supplier_Address"
+isNullable="columnNullable"
+visibility="public"
+length="45"
+type="_93"
+owner="_341"
+/>
+<CWMRDB:Column xmi.id="_346" name="Sup_Street_Number"
+isNullable="columnNullable"
+visibility="public"
+length="8"
+type="_97"
+owner="_341"
+/>
+<CWMRDB:Column xmi.id="_347" name="Country"
+isNullable="columnNullable"
+visibility="public"
+length="2"
+type="_27"
+owner="_341"
+/>
+</CWM:Classifier.feature>
+<CWM:Namespace.ownedElement>
+<CWMRDB:PrimaryKey xmi.id="_263" name="Supplier_ID"
+visibility="public"
+namespace="_341"
+feature="_342"
+keyRelationship="_262"
+/>
+<CWMRDB:ForeignKey xmi.id="_328" name="Street_ID"
+visibility="public"
+namespace="_341"
+feature="_344"
+uniqueKey="_104"
+deleteRule="importedKeySetNull"
+updateRule="importedKeySetNull"
+/>
+<CWM:Description xmi.id="_348"
+visibility="public"
+language=""
+type="definition"
+body="Suppliers for Orion Star Products"
+namespace="_341"
+modelElement="_341"
+/>
+<CWM:Description xmi.id="_349"
+visibility="public"
+language=""
+type="definition"
+body="Supplier ID&#10;SASFormat=12."
+namespace="_341"
+modelElement="_342"
+/>
+<CWM:Description xmi.id="_350"
+visibility="public"
+language=""
+type="definition"
+body="Supplier Name"
+namespace="_341"
+modelElement="_343"
+/>
+<CWM:Description xmi.id="_351"
+visibility="public"
+language=""
+type="definition"
+body="Supplier Street ID&#10;SASFormat=12."
+namespace="_341"
+modelElement="_344"
+/>
+<CWM:Description xmi.id="_352"
+visibility="public"
+language=""
+type="definition"
+body="Supplier  Address"
+namespace="_341"
+modelElement="_345"
+/>
+<CWM:Description xmi.id="_353"
+visibility="public"
+language=""
+type="definition"
+body="Supplier Street Number"
+namespace="_341"
+modelElement="_346"
+/>
+<CWM:Description xmi.id="_354"
+visibility="public"
+language=""
+type="definition"
+body="Country Abbreviation&#10;SASFormat=$Country.&#10;SASLabel=&#10;"
+namespace="_341"
+modelElement="_347"
+/>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Table>
+<CWMRDB:SQLIndex xmi.id="_355" name="City_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_3"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_356"
+visibility="public"
+isAscending="true"
+feature="_4"
+index="_355"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_357" name="Continent_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_16"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_358"
+visibility="public"
+isAscending="true"
+feature="_17"
+index="_357"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_359" name="Country"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_24"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_360"
+visibility="public"
+isAscending="true"
+feature="_26"
+index="_359"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_361" name="Continent_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_24"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_362"
+visibility="public"
+isAscending="true"
+feature="_32"
+index="_361"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_363" name="County_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_44"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_364"
+visibility="public"
+isAscending="true"
+feature="_45"
+index="_363"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_365" name="State_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_44"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_366"
+visibility="public"
+isAscending="true"
+feature="_56"
+index="_365"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_367" name="Region_Type"
+visibility="public"
+namespace="_2"
+spannedClass="_44"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_368"
+visibility="public"
+isAscending="true"
+feature="_54"
+index="_367"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_369" name="County_Type"
+visibility="public"
+namespace="_2"
+spannedClass="_44"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_370"
+visibility="public"
+isAscending="true"
+feature="_47"
+index="_369"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_371" name="Province_Type"
+visibility="public"
+namespace="_2"
+spannedClass="_44"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_372"
+visibility="public"
+isAscending="true"
+feature="_50"
+index="_371"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_373" name="Customer_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_76"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_374"
+visibility="public"
+isAscending="true"
+feature="_77"
+index="_373"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_375" name="Street_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_76"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_376"
+visibility="public"
+isAscending="true"
+feature="_94"
+index="_375"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_377" name="Customer_Type_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_76"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_378"
+visibility="public"
+isAscending="true"
+feature="_98"
+index="_377"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_379" name="Customer_Type_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_118"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_380"
+visibility="public"
+isAscending="true"
+feature="_119"
+index="_379"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_381" name="Product_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_128"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_382"
+visibility="public"
+isAscending="true"
+feature="_129"
+index="_381"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_383" name="Discount"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_128"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_384"
+visibility="public"
+isAscending="true"
+feature="_129"
+index="_383"
+/>
+<CWMRDB:SQLIndexColumn xmi.id="_385"
+visibility="public"
+isAscending="true"
+feature="_130"
+index="_383"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_386" name="Geo_Type_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_145"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_387"
+visibility="public"
+isAscending="true"
+feature="_146"
+index="_386"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_388" name="Product_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_155"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_389"
+visibility="public"
+isAscending="true"
+feature="_158"
+index="_388"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_390" name="Order_Item"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_155"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_391"
+visibility="public"
+isAscending="true"
+feature="_164"
+index="_390"
+/>
+<CWMRDB:SQLIndexColumn xmi.id="_392"
+visibility="public"
+isAscending="true"
+feature="_156"
+index="_390"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_393" name="Order_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_155"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_394"
+visibility="public"
+isAscending="true"
+feature="_164"
+index="_393"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_395" name="Order_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_178"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_396"
+visibility="public"
+isAscending="true"
+feature="_179"
+index="_395"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_397" name="Employee_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_178"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_398"
+visibility="public"
+isAscending="true"
+feature="_180"
+index="_397"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_399" name="Customer_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_178"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_400"
+visibility="public"
+isAscending="true"
+feature="_181"
+index="_399"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_401" name="Org_Level"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_195"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_402"
+visibility="public"
+isAscending="true"
+feature="_196"
+index="_401"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_403" name="Org_Ref"
+visibility="public"
+namespace="_2"
+spannedClass="_204"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_404"
+visibility="public"
+isAscending="true"
+feature="_210"
+index="_403"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_405" name="Org_Level"
+visibility="public"
+namespace="_2"
+spannedClass="_204"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_406"
+visibility="public"
+isAscending="true"
+feature="_209"
+index="_405"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_407" name="Employee_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_204"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_408"
+visibility="public"
+isAscending="true"
+feature="_205"
+index="_407"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_409" name="Postal_Code_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_223"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_410"
+visibility="public"
+isAscending="true"
+feature="_224"
+index="_409"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_411" name="City_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_223"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_412"
+visibility="public"
+isAscending="true"
+feature="_228"
+index="_411"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_413" name="Price_List"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_237"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_414"
+visibility="public"
+isAscending="true"
+feature="_238"
+index="_413"
+/>
+<CWMRDB:SQLIndexColumn xmi.id="_415"
+visibility="public"
+isAscending="true"
+feature="_239"
+index="_413"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_416" name="Product_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_237"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_417"
+visibility="public"
+isAscending="true"
+feature="_238"
+index="_416"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_418" name="Product_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_253"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_419"
+visibility="public"
+isAscending="true"
+feature="_254"
+index="_418"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_420" name="Supplier_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_253"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_421"
+visibility="public"
+isAscending="true"
+feature="_256"
+index="_420"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_422" name="Product_Level"
+visibility="public"
+namespace="_2"
+spannedClass="_253"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_423"
+visibility="public"
+isAscending="true"
+feature="_259"
+index="_422"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_424" name="Product_Ref_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_253"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_425"
+visibility="public"
+isAscending="true"
+feature="_258"
+index="_424"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_426" name="Product_Level"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_272"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_427"
+visibility="public"
+isAscending="true"
+feature="_273"
+index="_426"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_428" name="Employee_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_278"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_429"
+visibility="public"
+isAscending="true"
+feature="_279"
+index="_428"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_430" name="Staff"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_278"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_431"
+visibility="public"
+isAscending="true"
+feature="_279"
+index="_430"
+/>
+<CWMRDB:SQLIndexColumn xmi.id="_432"
+visibility="public"
+isAscending="true"
+feature="_280"
+index="_430"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_433" name="State_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_302"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_434"
+visibility="public"
+isAscending="true"
+feature="_303"
+index="_433"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_435" name="Country"
+visibility="public"
+namespace="_2"
+spannedClass="_302"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_436"
+visibility="public"
+isAscending="true"
+feature="_305"
+index="_435"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_437" name="State_Type"
+visibility="public"
+namespace="_2"
+spannedClass="_302"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_438"
+visibility="public"
+isAscending="true"
+feature="_304"
+index="_437"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_439" name="County_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_315"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_440"
+visibility="public"
+isAscending="true"
+feature="_327"
+index="_439"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_441" name="Street_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_315"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_442"
+visibility="public"
+isAscending="true"
+feature="_316"
+index="_441"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_443" name="Postal_Code_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_315"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_444"
+visibility="public"
+isAscending="true"
+feature="_323"
+index="_443"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_445" name="Supplier_ID"
+visibility="public"
+isUnique="true"
+namespace="_2"
+spannedClass="_341"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_446"
+visibility="public"
+isAscending="true"
+feature="_342"
+index="_445"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+<CWMRDB:SQLIndex xmi.id="_447" name="Street_ID"
+visibility="public"
+namespace="_2"
+spannedClass="_341"
+>
+<CWM:Index.indexedFeature>
+<CWMRDB:SQLIndexColumn xmi.id="_448"
+visibility="public"
+isAscending="true"
+feature="_344"
+index="_447"
+/>
+</CWM:Index.indexedFeature>
+</CWMRDB:SQLIndex>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Schema>
+</CWM:Namespace.ownedElement>
+</CWMRDB:Catalog>
+<CWMRDB:SQLDistinctType xmi.id="_9" name="SQL_CHAR_2"
+visibility="public"
+length="2"
+sqlSimpleType="_449"
+typeNumber="1"
+/>
+<CWMRDB:SQLDistinctType xmi.id="_91" name="Date"
+visibility="public"
+sqlSimpleType="_450"
+typeNumber="91"
+/>
+<CWMRDB:SQLDistinctType xmi.id="_5" name="ID"
+visibility="public"
+sqlSimpleType="_326"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_27" name="SQL_CHAR_2"
+visibility="public"
+characterMaximumLength="2"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_31" name="SQL_INTEGER"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_46" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_78" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_450" name="SQL_DATE"
+visibility="public"
+typeNumber="91"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_147" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_326" name="SQL_INTEGER"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_165" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_185" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_197" name="SQL_SMALLINT"
+visibility="public"
+typeNumber="5"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_225" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_159" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_260" name="SQL_SMALLINT"
+visibility="public"
+typeNumber="5"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_51" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_55" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_95" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_449" name="SQL_VARCHAR_20"
+visibility="public"
+characterMaximumLength="20"
+characterOctetLength="1"
+typeNumber="12"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_257" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_206" name="AUTOINCREMENT"
+visibility="public"
+typeNumber="4"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_81" name="SQL_CHAR_1"
+visibility="public"
+characterMaximumLength="1"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_227" name="SQL_CHAR_10"
+visibility="public"
+characterMaximumLength="10"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_83" name="SQL_CHAR_15"
+visibility="public"
+characterMaximumLength="15"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_307" name="SQL_CHAR_2"
+visibility="public"
+characterMaximumLength="2"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_87" name="SQL_CHAR_20"
+visibility="public"
+characterMaximumLength="20"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_286" name="SQL_CHAR_25"
+visibility="public"
+characterMaximumLength="25"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_89" name="SQL_CHAR_30"
+visibility="public"
+characterMaximumLength="30"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_85" name="SQL_CHAR_40"
+visibility="public"
+characterMaximumLength="40"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_93" name="SQL_CHAR_45"
+visibility="public"
+characterMaximumLength="45"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_97" name="SQL_CHAR_8"
+visibility="public"
+characterMaximumLength="8"
+characterOctetLength="1"
+typeNumber="1"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_29" name="SQL_NUMERIC_12"
+visibility="public"
+numericPrecision="12"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_133" name="SQL_NUMERIC_13_2"
+visibility="public"
+numericPrecision="13"
+numericScale="2"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_135" name="SQL_NUMERIC_5_2"
+visibility="public"
+numericPrecision="5"
+numericScale="2"
+typeNumber="2"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_157" name="SQL_SMALLINT"
+visibility="public"
+typeNumber="5"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_7" name="SQL_VARCHAR_30"
+visibility="public"
+characterMaximumLength="30"
+characterOctetLength="1"
+typeNumber="12"
+/>
+<CWMRDB:SQLSimpleType xmi.id="_49" name="SQL_VARCHAR_60"
+visibility="public"
+characterMaximumLength="60"
+characterOctetLength="1"
+typeNumber="12"
+/>
+</XMI.content>
+</XMI>
