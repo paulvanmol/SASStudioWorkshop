@@ -1,7 +1,7 @@
 /*Orion Case Study*/
 options dlcreatedir; 
 %let path=/gelcontent/sasstudioworkshop;
-libname ordetail base "&path/orionstar/ordetail"; 
+libname diftodet base "&path/orionstar/ordetail"; 
 libname orformat base "&path/orionstar/orfmt"; 
 libname diftsas base "&path/dift/data" ;
 options fmtsearch=(work orformat.formats library); 
