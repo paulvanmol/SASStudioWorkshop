@@ -1,11 +1,13 @@
 /*Orion Case Study*/
-libname ordetail base "/workshop/orionstar/ordetail"; 
-libname orformat base "/workshop/orionstar/orfmt"; 
-libname diftsas base "/workshop/dift/data" ;
-options fmtsearch=(work orformat.orionfmt library); 
-libname diftora ORACLE path="client.demo.sas.com:1521/ORCL" authdomain="OracleAuth";
-libname orstar base "/workshop/dift/datamart";
-libname difttgt base "/workshop/dift/datamart"; 
+options dlcreatedir; 
+%let path=/gelcontent/sasstudioworkshop;
+libname ordetail base "&path/orionstar/ordetail"; 
+libname orformat base "&path/orionstar/orfmt"; 
+libname diftsas base "&path/dift/data" ;
+options fmtsearch=(work orformat.formats library); 
+*libname diftora ORACLE path="client.demo.sas.com:1521/ORCL" authdomain="OracleAuth";
+libname orstar base "&path/dift/datamart";
+libname difttgt base "&path/dift/datamart"; 
 
 /*
 	The following options are used for debugging purposes. 
@@ -34,7 +36,7 @@ options obs=max NOSYNTAXCHECK;
 		- Update Table
 */
 %LET DELIVERING_PARTY = 111_orionstar;
-%LET ROOT_DIR = /workshop/dift/;
+%LET ROOT_DIR = &path/dift/;
 %LET PROCESSED_DTTM = %SYSFUNC(DATETIME(), DATETIME.);
 
 /*
