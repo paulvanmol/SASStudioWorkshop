@@ -1,0 +1,146 @@
+EXPRESSIONS FOR ProdDim CALCULATED FIELDS:
+
+Product_Group:		put(int(product_list.product_id/1e5)*1e5,product.)
+Product_Category:	put(int(product_list.product_id/1e8)*1e8,product.)
+Product_Line:		put(int(product_list.product_id/1e10)*1e10,product.)
+
+
+
+EXPRESSIONS FOR CustDim CALCULATED FIELDS:
+
+Customer_Age:		floor(yrdif(customer.birth_date, today(),'actual'))
+Customer_Age_Group:	put(calculated customer_age, agegroup.)
+
+
+
+EXPRESSIONS FOR OrgDim CALCULATED FIELDS:
+
+_Group:		Input(Put(organization.employee_id,orgdim.),12.)
+_Section:	Input(Put(calculated _group,orgdim.),12.)
+_Department:	Input(Put(calculated _section,orgdim.),12.)
+_Company:	Input(Put(calculated _department,orgdim.),12.)
+
+Group:		put(calculated _group, org.)
+Section:	put(calculated _section, org.)
+Department:	put(calculated _department, org.)
+Company:	put(calculated _company, org.)
+
+
+
+COMMENT TAGS FOR IMPORT SAS CODE DEMONSTRATION:
+
+/* ALTERNATE_NODE_NAME: Populate Combined Table */
+/* ALTERNATE_NODE_DESCRIPTION: Join Country and Country_Name */
+/* COMMENT: Match by Country_ID */
+
+
+
+COMMENT TAGS FOR IMPORT SAS CODE EXERCISE:
+
+/* ALTERNATE_NODE_NAME: Sort Step */
+/* ALTERNATE_NODE_DESCRIPTION: Sort the Country Table */
+/* COMMENT: Sort by Country */
+
+
+
+
+USER WRITTEN CODE FOR TRANSPOSE POST-PROCESSING:
+
+data work.transposedData (drop=gdrnum);
+   set &syslast(rename=(gender=gdrnum));
+   if gdrnum=0 then gender='M';
+   else if gdrnum=1 then gender='F';
+run;
+
+
+
+
+EXPRESSIONS FOR LOOP OVER JOB DEMONSTRATION:
+
+CountryName:	put(customer_country,$country.)
+CCountryName:	compress(put(customer_country,$country.))
+CountryValue:	put(customer_country,$2.)
+
+
+
+
+EXPRESSIONS FOR LOOP OVER JOB EXERCISE:
+
+ProductLine:
+Year:
+CProductLine:	compress(tranwrd(prodOrders.Product_Line,"&","And"))
+
+
+
+
+EXPRESSIONS FOR LOOP OVER TRANSFORMATION DEMONSTRATION:
+
+GenderValue:	put(customer_gender,$1.)
+AgeGroupValue:	
+GdrAgeGrp:	compress(put(customer_gender,$gender.)||ifc(index(customer_age_group,"-")>0,tranwrd(customer_age_group,"-","To"),tranwrd(customer_age_group,"&","And")))
+
+
+
+
+EXPRESSIONS FOR LOOP OVER TRANSFORMATION EXERCISE:
+
+PrdGrp:		compress(Product_Group," ,&'-.")
+
+
+
+
+PROC METALIB CODE FOR LOOP OVER TRANSFORMATION:
+
+/* Precode for PROC METALIB report formatting */
+options ls=95 nodate nonumber formchar="|---|-|---|";
+
+/* Postcode: PROC METALIB */
+proc metalib;
+   omr (library="DIFT Loop Jobs Library");
+   folder "/Data Mart Development/Orion Loop Jobs";
+   prefix "DIFT ";
+   report;
+run;
+
+
+
+
+LIBNAME STATEMENT OPTION FOR ORACLE TARGET TABLES:
+
+db_length_semantics_byte=no
+
+
+
+
+OPTIONS STATEMENT FOR IN-DATABASE PROCESSING:
+
+options sqlgeneration=(none dbms='Oracle') 
+      sastrace=',,,d' sastraceloc=saslog nostsuffix;
+
+
+
+
+EXPRESSIONS FOR CONDITIONAL EXECUTION DEMONSTRATION:
+
+%sysfunc(weekday(%sysfunc(today()))) = 2
+OrderDate between today() - 3 and today() - 1
+
+%sysfunc(weekday(%sysfunc(today()))) > 2 and %sysfunc(weekday(%sysfunc(today()))) < 7
+OrderDate = today() - 1
+
+
+
+
+COMMAND TO CHANGE DIRECTORIES FOR JOB DEPLOYMENT DEMONSTRATION:
+
+chdir D:\Program Files\SASHome\SASDataIntegrationStudioServerJars\4.8
+
+
+
+
+BATCH DEPLOYMENT COMMAND FOR DEMONSTRATION:
+
+DeployJobs -host "SASBAP.demo.sas.com" -port 8561 -user "Ahmed" -password "Student1" -deploytype deploy -objects "/Data Mart Development/Orion Loop Jobs"
+ -sourcedir "D:\Workshop\dift\DeploySourceCode" -deploymentdir "D:\Workshop\dift\OrionStarJobs" -metarepository Foundation -metaserverid A5HEHCWI.AT000001 
+-servermachine "SASBAP.demo.sas.com" -serverport 8591 -serverusername "Bruno" -serverpassword "Student1" -batchserver "SASApp - SAS DATA Step Batch Server"
+

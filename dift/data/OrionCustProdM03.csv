@@ -1,0 +1,9 @@
+Customer_ID,Customer_Country,Customer_Gender,Customer_Name,Customer_Age_Group,Customer_Age,Employee_ID,Order_Date,Delivery_Date,Order_ID,Order_Type,Product_ID,Quantity,Total_Retail_Price,CostPrice_Per_Unit,Discount,Product_Line,Product_Category,Product_Group,Product_Name
+56009,NL,F,Theresa Seip,46-60 years,53,120547,04MAR2003,04MAR2003,1230343860,1,240400100008,1,$21.60,$10.65,,Sports,Racket Sports,Badminton,Aftm 20 Badminton Racket
+56009,NL,F,Theresa Seip,46-60 years,53,120547,04MAR2003,04MAR2003,1230343860,1,240400100012,1,$496.30,$71.35,,Sports,Racket Sports,Badminton,Badminton String Roll 200 Mt
+56009,NL,F,Theresa Stemler,46-60 years,53,120545,18MAR2003,18MAR2003,1230420452,1,230100100013,1,$113.10,$58.90,,Outdoors,Outdoors,Anoraks & Parkas,Jacket with Removable Fleece
+56009,NL,F,Theresa Stemler,46-60 years,53,120545,18MAR2003,18MAR2003,1230420452,1,230100700008,1,$494.40,$241.00,,Outdoors,Outdoors,Tents,Family Holiday 4
+22656,DE,M,Hans Bernhard-Hindersdorf,31-45 years,38,120442,19MAR2003,19MAR2003,1230423159,1,210200400052,1,$41.60,$20.90,,Children,Children Sports,"Eclipse, Kid's Shoes",Toddler Pico V.
+89365,DK,M,Hardy Redneck,61-75 years,68,120309,21MAR2003,21MAR2003,1230435842,1,230100300018,1,$67.10,$27.60,,Outdoors,Outdoors,Gloves & Mittens,Scania Goretex Gloves
+10028,DE,F,Sabrina Thomas,46-60 years,58,120507,28MAR2003,28MAR2003,1230474330,1,240800200028,2,$86.00,$17.85,,Sports,Winter Sports,Winter Sports,Dark Grey PGA
+10028,DE,F,Sabrina Thomas,46-60 years,58,120467,28MAR2003,28MAR2003,1230120617,1,230100700011,1,$252.00,$103.95,,Outdoors,Outdoors,Tents,Tropical Storm

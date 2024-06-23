@@ -1,0 +1,5 @@
+Customer_ID,Customer_Country,Customer_Gender,Customer_Name,Customer_Age_Group,Customer_Age,Employee_ID,Order_Date,Delivery_Date,Order_ID,Order_Type,Product_ID,Quantity,Total_Retail_Price,CostPrice_Per_Unit,Discount,Product_Line,Product_Category,Product_Group,Product_Name
+10028,DE,F,Sabrina Weathers,46-60 years,58,120447,02FEB2003,02FEB2003,1230175140,1,220101400263,1,$132.20,$60.25,,Clothes & Shoes,Clothes,Tracker Clothes,Otter Snowboard Jacket
+33957,IT,F,Silvia Denozo,15-30 years,23,120650,02FEB2003,02FEB2003,1230177809,1,240800100025,2,$498.00,$113.55,,Sports,Winter Sports,Ski Dress,4men Men's Invert Jacket
+22656,DE,M,Hans Bernhard Hindersdorf,31-45 years,38,99999999,04FEB2003,09FEB2003,1230186983,2,230100500068,1,$1.70,$0.80,,Outdoors,Outdoors,Outdoor Gear,Plate Picnic Deep
+22656,DE,M,Hans Bernhard Hindersdorf,31-45 years,38,99999999,04FEB2003,09FEB2003,1230186983,2,230100500056,1,$8.00,$3.50,,Outdoors,Outdoors,Outdoor Gear,Big Knife
