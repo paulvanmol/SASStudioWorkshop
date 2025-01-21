@@ -14,12 +14,12 @@
 /*************************************************/
 %let data=SASHELP.CARS;
 %let report=Model;
-%let measure=MPG_City;
+%let measure=MPG_Highway;
 %let measureformat=%str(format=BEST6.);
 %let stat=MEAN;
-%let n=5;
+%let n=15;
 %let category=Origin;
-title "Top Models by MPG_City for each region of Origin";
+title "Top Models by &measure for each region of Origin";
 footnote;
 
 /* summarize the data across a category and store */
