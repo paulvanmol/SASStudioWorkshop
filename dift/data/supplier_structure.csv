@@ -1,0 +1,7 @@
+Name,SASColumnType,ReadFlag,Desc,Length,SASFormat,SASInformat
+Supplier_ID,N,Y,,4,,
+Supplier_Name,C,Y,,29,$29.,$29.
+Street_ID,N,Y,,8,,
+Supplier_Address,C,Y,,24,$24.,$24.
+Sup_Street_Number,N,Y,,8,,
+Country,C,Y,,14,$14.,$14.
